@@ -1,0 +1,115 @@
+@mixin btn-base() {
+  display: inline-block;
+  font-family: $base-font;
+  font-weight: $fw-extra-bold;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 0 solid transparent;
+  border-radius: 0.5rem;
+  background-size: $btn-bg-position;
+  background-position: right top;
+
+  padding: 0.625em 2em 0.5em;
+  @include font-size(18px, 1, 0);
+  transition: $transition-gradient, $transition-shadow;
+
+  &:hover {
+    color: #000000;
+    text-decoration: none;
+    box-shadow: $hover-shadow;
+    background-size: 100%;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $hover-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    box-shadow: $hover-shadow;
+
+    &:focus {
+    	box-shadow: $hover-shadow;
+    }
+  }
+}
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($background-color:transparent, $background-image:none, $border, $color: $black) {
+  color: $color;
+  //color: color-yiq($background);
+
+  background-color: $background-color;
+  background-image: $background-image;
+
+  &:hover {
+    background-size: 100%;
+  }
+
+  &:focus,
+  &.focus {
+    background-size: 100%;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+  	opacity: 0.8;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-size: 100%;
+  }
+}
+
+@mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+  color: $color;
+  border-color: $color;
+  border-width: 1px;
+
+  &:hover {
+    color: $color-hover;
+    background: $active-background;
+    border-color: $active-border;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow:$hover-shadow;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background: transparent;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    color: color-yiq($active-background);
+    background: $active-background;
+    border-color: $active-border;
+
+    &:focus {
+        box-shadow: $hover-shadow;
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+	.is-style-intro {
+		font-weight: $fw-bold;
+	}
+	.is-style-titre-categorie {
+		@extend .titre-categorie;
+	}
+	.is-style-subh2 {
+		@extend .subh2;
+	}
+	.entry-content {
+		ul:not([class]), {
+			list-style: none;
+			padding-left: rem(14px);
+			>li {
+				padding-left: 2 * $gutter;
+				background-image: url(./../img/1.icons/puce-texte.svg);
+				background-repeat: no-repeat;
+				background-position: left 6px;
+				background-size: 5px 12px;
+				margin-top: 1.25rem;
+			}
+		}
+	}

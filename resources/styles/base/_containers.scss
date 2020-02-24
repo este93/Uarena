@@ -1,0 +1,41 @@
+.container,
+.container-fluid,
+.container-narrow {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    @include clearfix;
+}
+
+.container {
+    max-width: calc(100vw - #{$gutter});
+}
+
+@media (min-width:$md){
+    .container {
+        max-width: calc(100vw - #{4*$gutter});
+    }
+}
+
+@media (min-width:$xl){
+    .container {
+        max-width: $xl;
+    }
+    .container-narrow {
+        max-width: $lg;
+    }
+}
+.wrapper__content--contracted {
+    max-width: $contracted-container-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-fluid {
+    max-width: 100%;
+}

@@ -1,0 +1,70 @@
+.uk-modal{
+	padding: 0;
+	&.uk-open {
+		display: flex !important;
+	}
+	.uk-modal-dialog {
+		background-color: rgba(0,0,0,0.8);
+		color: white;
+		animation-delay: 50ms;
+	}
+	.uk-modal-body {
+		padding: 15px;
+	}
+	.uk-modal-title {
+		font-size: 1.2rem;
+		text-align: center;
+		text-transform: none;
+		font-weight: normal;
+		position: relative;
+		margin-bottom: 2rem;
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+			position: absolute;
+			bottom: -1rem;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			text-transform: uppercase;
+			font-size: rem(25px);
+			font-weight: $fw-light;
+			padding: 0.75rem 0;
+			cursor: pointer;
+		}
+	}
+	.filter--offres {
+		display: block !important;
+	}
+	&#modal-nav {
+		.menu-item {
+			a {
+				color: white;
+				display: block;
+				position: relative;
+				&[aria-current]{
+					color: $green;
+					font-weight: $fw-bold;
+					&::after {
+					  content: "\02143";
+					  color: inherit;
+					  position: absolute;
+					  top: -0.25em;
+					  right: 0;
+					  display: block;
+					  transform:rotate(45deg);
+					  font-size: 1em;
+					  font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+}

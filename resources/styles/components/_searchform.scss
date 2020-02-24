@@ -1,0 +1,193 @@
+.search-form {
+	width: 80%;
+	max-width: 600px;
+	display: flex;
+	font-size: 1em;
+	color: inherit;
+	>div{
+		flex: 1 1 auto;
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid currentColor;
+	}
+	label {
+		padding: 0;
+	}
+	input[type=search] {
+		padding: 0;
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		line-height: 2em;
+		color: inherit;
+		font-weight: $fw-light;
+		text-transform: uppercase;
+		&::placeholder {
+		  color: inherit !important;
+		  opacity: 0.75;
+		}
+	}
+	button {
+		font-size: 110%;
+		color: inherit;
+		bottom: 0.5rem;
+		cursor: pointer;
+		z-index: 10;
+		&[disabled=disabled]{
+			opacity: 0.5;
+		}
+	}
+	.awesomplete > ul {
+		background-color: transparent;
+		border: none;
+		li {
+			font-size: 1em;
+			opacity: 0;
+			&:hover {
+				background: none;
+				opacity: 1 !important;
+			}
+			&:nth-child(1) {
+			    opacity: 0.6;
+			}
+			&:nth-child(2) {
+			    opacity: 0.5;
+			}
+			&:nth-child(3) {
+			    opacity: 0.4;
+			}
+			&:nth-child(4) {
+			    opacity: 0.3;
+			}
+			&:nth-child(5) {
+			    opacity: 0.2;
+			}
+			&:nth-child(6) {
+			    opacity: 0.1;
+			}
+		}
+	}
+}
+
+#search-window {
+	z-index: 1030;
+	.bg-produit {
+	    background-image: url(./../img/3.dgrad/fond-dgrad-cercles-verts.svg);
+	    &::after {
+	    	background: $gradient-over-image-recherche;
+	    }
+	}
+	.uk-modal-close {
+	    position: absolute;
+	    right: 5*$gutter;
+	    top: 5*$gutter;
+	    cursor: pointer;
+	    font-size: rem(35px);
+	    z-index: 10;
+	}
+	.uk-modal-dialog {
+		width: 100%;
+		background-color: $green;
+		display: flex;
+		.search-container {
+			position: relative;
+			flex: 1 1 auto;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+			font-size: rem(35px);
+			color: black;
+			button:hover {
+				color: $primary;
+			}
+		}
+	}
+}
+body.search {
+	.site-content {
+		.container {
+			@media (min-width:$xl){
+				max-width: $contracted-container-width - $gutter * 2 * 2;
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+			}
+			.search-form > div {
+				display: flex;
+				button:hover {
+					color: $green;
+				}
+			}
+			.awesomplete {
+				flex: 1 1 auto;
+				> ul {
+					box-shadow: $hover-shadow;
+					width: 100%;
+					background-color: rgba($primary,0.5);
+					border: none;
+					background-image: url(./../img/3.dgrad/fond-dgrad-cercles-violets.svg);
+					background-size: cover;
+					background-position: left top;
+					background-repeat: no-repeat;
+					li {
+						background-color: rgba($primary,0.3);
+						color: white;
+						opacity: 1 !important;
+						text-transform: uppercase;
+						mark {
+							color: white;
+						}
+						&:hover {
+							background-color: $primary;
+							opacity: 1 !important;
+						}
+					}
+				}
+
+			}
+
+		}
+		background-color: $bgc-fiche-produit;
+		background-image: url(./../img/2.common/fond-vague-violet.png);
+		background-size: 100% auto;
+		background-position: center 600px;
+		background-repeat: no-repeat;
+		position: relative;
+		.search-form {
+			margin: auto;
+			color: white;
+			@media (max-width: $md){
+				width: 100%; 
+			}
+		}
+		h1 {
+			font-size: rem(24px);
+			font-weight: $fw-regular;
+			color: white;
+			text-transform: initial;
+			margin: 3 * $gutter 0;
+			span {
+				font-style: italic;
+			}
+		}
+	}
+	.wrapper__content {
+		margin-bottom: 7*$gutter;
+		.titre-categorie{
+			margin-bottom: 2*$gutter;
+		}
+	}
+	.results-grid:not(.produit-grid):not(.post-grid) {
+		.card__block-image {
+			display: none;
+		}
+		.card__body {
+			padding: 1.5rem;
+		}
+	}
+	.results-grid:not(.produit-grid) {
+		@extend %articles-grid;
+		padding: 0 !important;
+	}
+	.produit-grid {
+		@extend %product-grid;
+	}
+}

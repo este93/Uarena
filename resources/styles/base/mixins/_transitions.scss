@@ -1,0 +1,100 @@
+@mixin transition($val...) {
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-ms-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin transition-delay($val) {
+	-webkit-transition-delay: $val;
+	-moz-transition-delay: $val;
+	-ms-transition-delay: $val;
+	-o-transition-delay: $val;
+	transition-delay: $val;
+}
+
+@mixin transform($val...) {
+	-webkit-transform: $val;
+	-moz-transform: $val;
+	-ms-transform: $val;
+	-o-transform: $val;
+	transform: $val;
+}
+
+@mixin transform-origin($val) {
+	-webkit-transform-origin: $val;
+	-moz-transform-origin: $val;
+	-ms-transform-origin: $val;
+	-o-transform-origin: $val;
+	transform-origin: $val;
+}
+
+
+.reveal,
+.reveal::after {
+	        animation-delay: 0;
+	        animation-delay: var(--animation-delay, 2s);
+	        animation-iteration-count: 1;
+	        animation-iteration-count: var(--animation-iterations, 1);
+	        animation-duration: 800ms;
+	        animation-duration: var(--animation-duration, 800ms);
+	        animation-fill-mode: both;
+	        animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+ 
+.reveal {
+	transition: clip-path var(--animation-duration, 800ms) cubic-bezier(0.0, 0.0, 0.2, 1);
+	clip-path: inset(0 0 0 100%);
+	&:hover {
+		clip-path: inset(0 0 0 0);
+	}
+}
+ 
+.reveal::after {
+		//content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url(./../img/3.dgrad/dgrad-vert-billetterie.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		transform: scaleX(0);
+		transform-origin: 100% 50%;
+		pointer-events: none;
+		animation-name: revealer;
+	}
+ 
+ 
+ 
+@keyframes clippedtext {
+	from {
+	        clip-path: inset(0 0 0 100%);
+	}
+	to {
+	        clip-path: inset(0 0 0 0);
+	}
+}
+ 
+@keyframes unclippedtext {
+	from {
+	        clip-path: inset(0 0 0 0);
+	}
+	to {
+	        clip-path: inset(0 0 0 100%);
+	}
+}
+ 
+ 
+ 
+ 
+@keyframes revealer {
+	
+	100% {
+	        transform: scaleX(1);
+	}
+}

@@ -1,0 +1,15 @@
+@mixin arrondi-basdepage() {
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		padding-top: 37 / 1366 * 100%;
+		background-image: url(./../img/2.common/forme-arrondie-bas-de-page.svg);
+		background-size: cover;
+		background-position: center bottom;
+		background-repeat: no-repeat;		
+		z-index: -1;
+		margin-bottom: -1px;
+    	vertical-align: bottom;
+	}
+}

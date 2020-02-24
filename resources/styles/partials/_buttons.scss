@@ -1,0 +1,177 @@
+button {
+	@include transition(all $time $ease);
+}
+
+
+.btn,
+button {
+	@include btn-base();
+
+	&.btn-sm {
+    @include font-size(16px, 16px, 0);
+	}
+
+	&.btn-xs {
+		@include font-size(14px, 14px, 0);
+	}
+
+	&.btn-lg {
+		@include font-size(20px, 20px, 0);
+	}
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+// scrollTo links
+
+.to-anchor {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  top: -24px;
+  a {
+    display: block;
+    height: 100%;
+    fill: $primary;
+    text-align: center;
+    transition: none;
+  }
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $fw-normal;
+  color: $link-color;
+  text-decoration: $link-decoration;
+  padding: 0;
+  box-shadow: none;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    box-shadow: none;
+  }
+
+  &:focus,
+  &.focus,
+  &:active {
+    text-decoration: $link-hover-decoration;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: gray;
+    pointer-events: none;
+  }
+
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  >*{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+.btn-fullwidth {
+  width: 100%
+}
+
+.btn.flat,
+button.flat {
+  padding: 0;
+  &:hover,
+  &:focus,
+  &.focus {
+    box-shadow: none;
+    rect {
+      width: 100%;
+    }
+  }
+}
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $colours {
+  .btn-#{$color} {
+    @include button-variant($value, none, $value);
+  }
+}
+
+@each $color, $value in $colours {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+.btn-outline-white:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@each $color, $value in $gradients {
+  .btn-#{$color} {
+    @include button-variant(transparent, $value, $value);
+  }
+}
+
+@each $genre, $value in $genre-grad {
+  .btn-#{$genre} {
+    @include button-variant(transparent, $value, $value);
+  }
+}
+.btn-offre,
+.btn-grad-gold {
+  &,
+  &:hover {
+    color: white;
+  }
+}
+
+
+.btn-gray {
+  @include button-variant(transparent, $gradient-disabled, $gradient-disabled);
+  font-weight: $fw-regular;
+}
+
+@each $color, $value in $gradients {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+.btn-context {
+  @include button-variant(transparent, $bg-gradient-event-billetterie, $bg-gradient-event-billetterie);
+}
+
+@each $genre, $gradient in $genre-grad {
+  [data-theme="genre_evenement_#{$genre}"] .btn-context,
+  .genre_evenement_#{$genre} .btn-context {
+    @include button-variant(transparent, $gradient, $gradient);
+  }
+}
+[data-theme="genre_evenement_orange-theme"] .btn-context,
+.genre_evenement_orange-theme .btn-context,
+[data-theme="genre_evenement_rouge-theme"] .btn-context,
+.genre_evenement_rouge-theme .btn-context,
+[data-theme="genre_evenement_racing92-theme"] .btn-context,
+.genre_evenement_racing92 .btn-context {
+  color: white;
+}
+

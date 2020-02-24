@@ -1,0 +1,17 @@
+<svg viewBox="0 0 860 896" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="dgrad-rose">
+            <stop stop-color="#00FFD7" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#6C80AB" stop-opacity="0.5" offset="37%"></stop>
+            <stop stop-color="#D7007F" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dgrad-rose-billetterie">
+            <g id="Group">
+                <polygon id="Shape" fill="#D7007F" points="0.00905263158 0 860 0 860 896 0.00905263158 896"></polygon>
+                <polygon id="Shape" fill="url(#dgrad-rose)" fill-rule="nonzero" points="0.00905263158 0 860 0 860 896 0.00905263158 896"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

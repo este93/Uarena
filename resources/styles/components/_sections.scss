@@ -1,0 +1,4 @@
+.section--fullbg {
+	position: relative;
+	@include full_width_bg();
+}

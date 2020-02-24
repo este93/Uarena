@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2866px" height="120px" viewBox="0 0 2866 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-flash-info-vert</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 2866 0 2866 128.571 0 128.571"></polygon>
+        <path d="M1433.01,98 C1120.5817,98 808.145029,77.0752959 757.214093,73.5126797 C706.283158,69.9500636 0,9 0,0 C25.2213542,8.84015083e-15 275.221354,1.32602263e-14 750,1.32602263e-14 L2116,1.32602263e-14 C2616,4.42007542e-15 2866,0 2866,0 C2866,7.55555556 2616,31.8888889 2116,73 C1868.85939,89.6666667 1641.19606,98 1433.01,98 Z" id="path-3"></path>
+        <filter x="-0.8%" y="-11.2%" width="101.5%" height="144.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.327841938 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#00FF00" offset="50%"></stop>
+            <stop stop-color="#FFFF00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#FFFF00" offset="50%"></stop>
+            <stop stop-color="#00FF00" offset="100%"></stop>
+        </linearGradient>
+        <path d="M683.01,98 C341.51,98 0,73 0,73 L0,0 L1366,0 L1366,73 C1366,73 1024.507,98 683.01,98 Z" id="path-8"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-flash-info-vert">
+            <g id="Clipped">
+                <g id="Shape" fill="#16FF26" fill-opacity="0.899999976" fill-rule="nonzero">
+                    <path d="M1433.01,98 C1120.5817,98 808.145029,77.0752959 757.214093,73.5126797 C706.283158,69.9500636 0,9 0,0 C25.2213542,8.84015083e-15 275.221354,1.32602263e-14 750,1.32602263e-14 L2116,1.32602263e-14 C2616,4.42007542e-15 2866,0 2866,0 C2866,7.55555556 2616,31.8888889 2116,73 C1868.85939,89.6666667 1641.19606,98 1433.01,98 Z"></path>
+                </g>
+                <g id="Group" opacity="0.609319196">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <g id="Clipped" mask="url(#mask-2)">
+                        <g id="Group">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask" fill="black" fill-opacity="1">
+                                <use filter="url(#filter-5)" xlink:href="#path-3"></use>
+                            </g>
+                            <g mask="url(#mask-4)" id="vert">
+                                <g transform="translate(-279.000000, -613.000000)">
+                                    <g>
+                                        <rect id="Rectangle_49" fill="url(#linearGradient-6)" fill-rule="nonzero" x="1340.54629" y="450.452381" width="1812.62038" height="1801.80952"></rect>
+                                        <circle id="Ellipse_33" fill="url(#linearGradient-7)" fill-rule="nonzero" cx="1351.35714" cy="1351.35714" r="1351.35714"></circle>
+                                        <circle id="Ellipse_34" fill="url(#linearGradient-7)" fill-rule="nonzero" cx="1351.35714" cy="1351.35714" r="900.904762"></circle>
+                                        <circle id="Ellipse_35" fill="url(#linearGradient-6)" fill-rule="nonzero" cx="1351.35714" cy="1351.35714" r="675.678571"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="icon" transform="translate(750.000000, 0.000000)">
+                <mask id="mask-9" fill="white">
+                    <use xlink:href="#path-8"></use>
+                </mask>
+                <g id="path-1"></g>
+                <path d="M176,62 L196,62 L196,82 L176,82 L176,62 Z M176,-14 L196,-14 L196,42 L176,42 L176,-14 Z M183.905,-61 C131.465,-61 89,-18.44 89,34 C89,86.44 131.465,129 183.905,129 C236.44,129 279,86.44 279,34 C279,-18.44 236.44,-61 183.905,-61 Z M185.5,112 C143.23375,112 109,77.76625 109,35.5 C109,-6.76625 143.23375,-41 185.5,-41 C227.76625,-41 262,-6.76625 262,35.5 C262,77.76625 227.76625,112 185.5,112 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.523381696" mask="url(#mask-9)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

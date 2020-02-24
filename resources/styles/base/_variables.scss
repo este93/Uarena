@@ -1,0 +1,227 @@
+/*-------------------------
+*  Grid
+*--------------------------*/
+$columns: 12;
+$gutter: 10px;
+$spacing: 20;
+$contracted-container-width: 980px;
+$width-billetterie: 337px;
+
+/*-------------------------
+*  Spacing
+*--------------------------*/
+$paddings: ('pt': 'padding-top', 'pr': 'padding-right', 'pb': 'padding-bottom', 'pl': 'padding-left');
+$margins: ('mt': 'margin-top', 'mr': 'margin-right', 'mb': 'margin-bottom', 'ml': 'margin-left');
+$content-side-xl-padding: 7.5rem;
+$base-space: 1rem;
+/*-------------------------
+*  Media Queries
+*--------------------------*/
+$xs: 480px;
+$sm: 600px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1110px;
+$xxl: 1700px;
+
+$bp-menu: 1240px;
+
+//$breakpoints: ('xs': $xs, 'sm': $sm, 'md': $md, 'lg': $lg, 'xl': $xl);
+$breakpoints: ('xs': $xs, 'sm': $sm, 'md': $md, 'lg': $lg);
+
+/*-------------------------
+*  Typography
+*--------------------------*/
+$base-font: circe, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$base-fs: 16px;
+$base-fs-rem: 1rem;
+
+$fw-thin: 100;
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-regular: $fw-normal;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;
+
+/*-------------------------
+*  Forms
+*--------------------------*/
+
+$input-height:40px;
+
+/*-------------------------
+*  paramètres pour les fiches evenement
+*--------------------------*/
+$card-service-fz: 1.25em;
+$card-service-fw: $fw-light;
+$card-category-fz: 1.25em;
+$card-category-fw: $fw-light;
+$card-titre-fz: 1em;
+$card-titre-fw: $fw-extra-bold;
+$card-date-fz: 0.875em;
+$card-date-fw: $fw-medium;
+
+/*-------------------------
+*  Colours
+*--------------------------*/
+$white: 	   #fff;
+$black: 	   #000;
+$rose:       #d7007f;
+$light-grey: #f0f0f0;
+$lpda-grey:  #cccccc;
+$primary: 	 #1d0851;
+$lime:		   #00FF00;
+$green: 	   $lime;
+$dark-green: #2ffa3b;
+$gold: 		   #bea578;
+$red: 		   #ff0032;
+$light-blue: #0032c0;
+$dark-blue:  $primary;
+$nav-blue:   #003bf0;
+$bleu-vip:   #2E2777;
+
+$border-lightgrey:      #f2f2f2;
+$bleu-newsletter:       #2E2B86;
+$fond-dropdown-billets: #1E0851;
+$fond-mobile-menu:      #F3F2F6;
+$fond-billets-racing:   rgba(#043194, 0.8);
+
+$link-color: 			      $primary;
+$link-hover-color:  	  lighten($link-color, 15%);
+$link-decoration: 		  underline;
+$link-hover-decoration:	underline;
+
+$gradient-bleu-start: #b7ffff;
+$gradient-bleu-end:   $light-blue;
+
+$gradient-navbar: 		linear-gradient(90deg, rgba(0,59,240,1) 0%, rgba(0,0,120,1) 50%, rgba(29,8,81,1) 100%);
+$gradient-green:  		linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba($lime,1) 100%);
+$gradient-green-text:	linear-gradient(90deg, rgb(190, 228, 46) 0%, rgb(40, 228, 41) 100%);
+$gradient-violet: 		linear-gradient(90deg, rgba(132,54,190,1) 0%, rgba(215,0,127,1) 100%);
+$gradient-bleu:   		linear-gradient(90deg, rgba($gradient-bleu-start,1) 0%, rgba($gradient-bleu-end,1) 100%);
+$gradient-orange: 		linear-gradient(90deg, rgba(255,189,0,1) 0%, rgba(255,0,50,1) 100%);
+$gradient-gold:	  		linear-gradient(90deg, rgba($gold,1) 0%, rgba($bleu-vip,1) 100%);
+$gradient-gold-inverse:	linear-gradient(-90deg, rgba($gold,1) 0%, rgba($bleu-vip,1) 100%);
+$gradient-disabled:	  	linear-gradient(90deg, rgba($lpda-grey,1) 0%, rgba(#999999,1) 100%);
+$gradient-purple:     linear-gradient(90deg, rgba(93,5,96,1) 0%, rgba(45,45,129,1) 100%);
+
+
+$bgc-fiche-produit: $primary;
+$bgc-fiche-article: $bgc-fiche-produit;
+$bgc-fiche-racing:  #C2E0F3;
+$bgc-fiche-vip:  	$bleu-vip;
+$titres-couleur-racing: $light-blue;
+
+$gradient-over-image-recherche: linear-gradient(0deg, rgba( $green, 1 ) 0%, rgba( $green, 0 ) 100%);
+$gradient-over-image-produit: linear-gradient(0deg, rgba( $bgc-fiche-produit, 1 ) 0%, rgba( $bgc-fiche-produit, 0 ) 100%);
+$gradient-over-image-article: linear-gradient(0deg, rgba( $bgc-fiche-produit, 1 ) 0%, rgba( $bgc-fiche-produit, 0 ) 20%);
+$gradient-over-image-racing:  linear-gradient(0deg, rgba( $bgc-fiche-racing, 1 ) 0%, rgba( $bgc-fiche-racing, 0 ) 100%);
+$gradient-over-image-vip:     linear-gradient(0deg, rgba( $bleu-vip, 1 ) 0%, rgba( $bleu-vip, 0 ) 100%);
+$gradient-over-slider-vip:    linear-gradient(90deg, rgba( $bleu-vip, 0 ) 60%, rgba( $bleu-vip, 1 ) 90%);
+
+
+
+$bg-gradient-event-billetterie: $gradient-green;
+$bg-gradient-event-offres:	  	$gradient-gold;
+$bg-gradient-racing:	  		$gradient-bleu;
+
+$btn-font-color: $black;
+$btn-disabled-opacity: 0.8;
+$btn-bg-position: 125%;
+
+// custom colours
+
+$colours:   		('white': $white, 'black': $black, 'light-grey': $light-grey, 'primary': $primary, 'nav-blue': $nav-blue, 'green': $green, 'red': $red, 'light-blue': $light-blue, 'gold': $gold, 'lpda-grey': $lpda-grey, 'bleu-newsletter': $bleu-newsletter);
+$gradients: 		('grad-navbar': $gradient-navbar, 'grad-green': $gradient-green, 'grad-violet': $gradient-violet, 'grad-bleu': $gradient-bleu, 'grad-orange': $gradient-orange, 'grad-gold': $gradient-gold, );
+$gradients-text: 	('grad-navbar': $gradient-navbar, 'grad-green': $gradient-green-text, 'grad-violet': $gradient-violet, 'grad-bleu': $gradient-bleu, 'grad-orange': $gradient-orange, 'grad-gold': $gradient-gold, );
+//$genre-grad: 		('concert': $bg-gradient-event-billetterie, 'spectacle': $gradient-orange, 'sport': $gradient-violet, 'racing92': $bg-gradient-racing, 'offre': $bg-gradient-event-offres);
+$genre-grad: 		('concert': $bg-gradient-event-billetterie, 'green-theme': $bg-gradient-event-billetterie, 'orange-theme': $gradient-orange, 'rouge-theme': $gradient-violet, 'racing92': $bg-gradient-racing, 'racing92-theme': $bg-gradient-racing, 'offre': $bg-gradient-event-offres, 'vip-theme': $bg-gradient-event-offres);
+$genre-grad-text:	('concert': $gradient-green-text, 'green-theme': $gradient-green-text, 'orange-theme': $gradient-orange, 'rouge-theme': $gradient-violet, 'racing92': $bg-gradient-racing, 'racing92-theme': $bg-gradient-racing, 'offre': $bg-gradient-event-offres, 'vip-theme': $bg-gradient-event-offres);
+//$genre-colors:  	('concert': $green, 'spectacle': $red, 'sport': $primary, 'racing92': $light-blue, 'offre': $gold);
+$genre-colors:  	('concert': $green, 'green-theme': $green, 'orange-theme': $red, 'rouge-theme': $primary, 'racing92': $light-blue, 'racing92-theme': $light-blue, 'offre': $gold, 'vip-theme': $gold);
+
+$svg-gradient-start-stop:(
+  (concert, $green, #ff0),
+  //(spectacle, rgb(255,189,0), rgb(255,0,50)),
+  //(sport, rgb(132,54,190), rgb(215,0,127)),
+  (racing92, rgb(0,50,192), rgb(183,255,255)),
+  (offre, $gold, $bleu-vip),
+  ('green-theme', $green, #ff0),
+  ('racing92-theme', rgb(0,50,192), rgb(183,255,255)),
+  ('vip-theme', $gold, $bleu-vip),
+  ('orange-theme', rgb(255,189,0), rgb(255,0,50)),
+  ('rouge-theme', rgb(132,54,190), rgb(215,0,127)),
+  ('violet-theme', #0000b4, #f0f),
+);
+
+
+/*-------------------------
+*  Icons
+*--------------------------*/
+
+$chevron-down: "data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' class='svg-inline--fa fa-chevron-down fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 448 512'%3E%3Cpath fill='white' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E";
+/*-------------------------
+*  Shadow
+*--------------------------*/
+
+$hover-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+$form-shadow: 0px 6px 51px rgba(192, 192, 192, 0.5);
+
+
+/*-------------------------
+*  Animations
+*--------------------------*/
+
+$scale-1: .5;
+$scale-2: .8;
+$scale-3: .9;
+$scale-4: 2.75;
+
+$distance-1: 30px;
+$distance-2: 90px;
+$distance-3: 125px;
+
+$duration-1: 85ms;
+$duration-2: 167ms;
+$duration-3: 250ms;
+$duration-4: 333ms;
+$duration-5: 417ms;
+$duration-6: 500ms;
+$duration-7: 750ms;
+$duration-8: 1s;
+$duration-9: 2s;
+$duration-10:18s;
+
+$time: 320ms;
+$time_slow: 700ms;
+
+$ease-slow: cubic-bezier(0.35, 0.00, 0.50, 1.00);
+$ease-quick: cubic-bezier(0.35, 0.00, 0.25, 1.00);
+$ease-entrance: cubic-bezier(0.00, 0.00, 0.10, 1.00);
+$ease-exit: cubic-bezier(0.35, 0.00, 0.80, 1.00);
+$ease-spirited: cubic-bezier(0.35, 1.30, 0.30, 1.00);
+$ease-spirited-entrance: cubic-bezier(0.15, 1.30, 0.30, 1.00);
+$ease-spirited-exit: cubic-bezier(0.70, -0.10, 0.60, 0.10);
+$ease-out: cubic-bezier(0, .65, .23, 1);
+
+$swing: cubic-bezier(0.55, 0, 0.1, 1);
+$swift: cubic-bezier(0.4, 0, 0.2, 1);
+$ease: $ease-slow;
+
+
+// for CSS transition property
+$transition-default: all $time $ease;
+$transition-gradient: background $duration-3 $ease-slow;
+$transition-width: width $duration-6 $ease-quick;
+$transition-height: height $duration-6 $ease-quick;
+$transition-maxheight: max-height $duration-6 $ease-slow;
+$transition-opacity: opacity $duration-3 $ease-slow;
+$transition-color: color $duration-3 $ease-slow;
+$transition-shadow: box-shadow $duration-3 $ease-slow;
+$transition-transform: transform $duration-3 $ease-slow;
+

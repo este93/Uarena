@@ -1,0 +1,19 @@
+<svg id="bulle-fleche" xmlns="http://www.w3.org/2000/svg" width="149.844" height="65" viewBox="0 0 149.844 65">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #1d0851;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="BG" class="cls-1" d="M608,1449v-40.12h0.149a125.032,125.032,0,0,1,149.7,0H757V1426h0v23" transform="translate(-608 -1384)"/>
+  <path id="Fleche_Scroll" data-name="Fleche Scroll" class="cls-2" d="M678.349,1415l4.651,4.74,4.65-4.74,1.351,1.38-6,6.12-6-6.12ZM682,1398h2v22h-2v-22Z" transform="translate(-608 -1384)"/>
+</svg>

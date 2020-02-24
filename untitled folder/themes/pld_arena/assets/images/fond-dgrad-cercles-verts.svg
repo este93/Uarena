@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="340" viewBox="0 0 340 340">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="BG_DgraD" data-name="BG DgraD" width="340" height="340" transform="translate(4817 3329)" fill="#1d0851"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="imageMask" width="1920" height="3154" transform="translate(4198 512)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="crop" width="340" height="340" fill="none"/>
+    </clipPath>
+    <linearGradient id="dgrad-cercles-verts" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.5" stop-color="lime"/>
+      <stop offset="1" stop-color="#ff0"/>
+    </linearGradient>
+    <linearGradient id="dgrad-cercles-verts-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.5" stop-color="#ff0"/>
+      <stop offset="1" stop-color="lime"/>
+    </linearGradient>
+  </defs>
+  <g id="Clip" transform="translate(-4817 -3329)" clip-path="url(#clip-path)">
+    <g id="DgraD-vert" opacity="0.749" clip-path="url(#clip-path-2)">
+      <g id="DgraD-vert-2" data-name="DgraD-vert" transform="translate(4817 3329)" clip-path="url(#clip-path-3)">
+        <rect id="Rectangle_48" data-name="Rectangle 48" width="340" height="340"/>
+        <g id="Groupe_177" data-name="Groupe 177">
+          <g id="Groupe_176" data-name="Groupe 176" clip-path="url(#clip-path-3)">
+            <rect id="Rectangle_49" data-name="Rectangle 49" width="342.04" height="340" transform="translate(-2.04)" fill="url(#dgrad-cercles-verts)"/>
+            <circle id="Ellipse_33" data-name="Ellipse 33" cx="255" cy="255" r="255" transform="translate(-255 -85)" fill="url(#dgrad-cercles-verts-2)"/>
+            <circle id="Ellipse_34" data-name="Ellipse 34" cx="170" cy="170" r="170" transform="translate(-170 0)" fill="url(#dgrad-cercles-verts-2)"/>
+            <circle id="Ellipse_35" data-name="Ellipse 35" cx="127.5" cy="127.5" r="127.5" transform="translate(-127.5 42.5)" fill="url(#dgrad-cercles-verts)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

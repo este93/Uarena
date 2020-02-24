@@ -1,0 +1,151 @@
+
+%articles-grid {
+	padding: rem(4 * $gutter) rem(2 * $gutter);
+	margin-left: rem(3 * -1 * $gutter);
+	display: flex;
+	flex-wrap: wrap;
+	>div{
+		padding-left: rem(3 * $gutter);
+		width: 100%;
+		margin-bottom: rem(30px);
+		box-sizing: border-box;
+		@media (min-width: $md) {
+			width: 50%;
+		}
+	}
+}
+.blog {
+	.site-content {
+		background-color: transparent;
+		&::after {
+			z-index: 0;
+			position: absolute;
+		}
+	}
+	/*  Slider News */
+	.wrapper-slider {
+		background-image: url(./../img/2.common/fond-slider-news.png);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: cover;
+		display: none;
+		@media (min-width: $md){
+			display: block;
+		}
+		>.container {
+			position: relative;
+			&::after{
+				background-image: url(./../img/1.icons/icon-ecaille-plus-cercle.svg);
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 60px;
+				height: 60px;
+				right: 0;
+				top: 30%;
+				content: "";
+				display: block;
+				position: absolute;
+				transform: translate(100%,0);
+			}
+		}
+	}
+	.slider--newsSlider {
+		padding: ($base-space * 6) 0;
+		max-height: calc(100vh - 80px);
+		overflow: hidden;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		.bg--slider-ecailles {
+			display: none;
+		}
+		.slide__item {
+			display: flex;
+			align-items: center;
+			padding-left: 100px;
+			box-sizing: border-box;
+		}
+		.slide__body {
+			flex: 0 0 35%;
+			max-width: 35%;
+			margin-right: 10%;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 200px;
+				height: 200px;
+				z-index: -1;
+				background-image: url(./../img/2.common/fond-news.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				transform: translate(-50%,-30%);
+			}
+			.titre-hero {
+				font-weight: $fw-light;
+			}
+			.slide-title {
+				font-size: rem(24px);
+				line-height: 1.2;
+				font-weight: 800;
+				text-transform: uppercase;
+				svg {
+					display: none;
+				}
+			}
+			.slide-date {
+				font-size: rem(22px);
+				font-weight: $fw-bold;
+				text-transform: uppercase;
+				margin-top: 0.5rem;
+			}
+		}
+		.slide_image {
+			// margin-left: auto;
+			img {
+				max-height: 50vh;
+			}
+		}
+		.swiper-buttons-nav {
+			top: 50%;
+			position: absolute;
+			margin-left: 42.5%;
+			z-index: 1;
+			width: auto;
+			display: flex;
+			>div{
+				position: relative;
+				left: auto;
+				right: auto;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+	.wrapper-articles {
+		background-color: $bgc-fiche-article;
+		background-image: url(./../img/2.common/fond-vague-violet.png);
+		background-size: 100% auto;
+		background-position: center 600px;
+		background-repeat: no-repeat;
+		padding-top: 2.5rem;
+		position: relative;
+		h1 {
+			color: white;
+		}
+		.wrapper__content--contracted{
+			padding-left: $gutter;
+			padding-right: $gutter;
+			@media (min-width: $md) {
+				padding-left: 4 * $gutter;
+				padding-right: 4 * $gutter;
+			}
+		}
+		.articles-grid {
+			@extend %articles-grid;
+		}
+	}
+}

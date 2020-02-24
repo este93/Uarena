@@ -1,0 +1,87 @@
+.card-article {
+	.card__body {
+		background-image: url(./../img/2.common/fond-card-titres-articles.png);
+		background-size: 100% auto;
+		background-position: center top;
+		background-repeat: no-repeat;		
+	}
+}
+.single-post {
+	.row-main{
+		padding: rem($gutter * 2) rem($gutter * 2) rem($gutter * 4);
+	}
+	.col-main {
+		.col-main__inner {
+			padding: 2rem $content-side-xl-padding $content-side-xl-padding;
+			background-color: rgba(255,255,255,0.9);
+			background-image: url(./../img/2.common/bg-footer-bloc-article.png);
+			background-position: center bottom;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+	}
+	.site-content {
+		background-color: $bgc-fiche-article;
+		background-image: url(./../img/2.common/fond-vague-violet.png);
+		background-size: 100% auto;
+		background-position: center 600px;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	&[data-context="racing92"] {
+		.site-content {
+			background-image: url(./../img/2.common/fond-vague-racing.png);
+		}
+	}
+	article {
+		.bg-produit{
+			max-height: none;
+			&:not(.content-empty) {
+				width: 130%;
+				margin-left: -15%;
+				@media (min-width: $md) {
+					width: 100%;
+					margin-left: 0;
+					transform: none !important;
+				}
+				&::after {
+					background-image: $gradient-over-image-article;
+				}
+				+ div {
+				 	margin-top: 50vh;
+				}
+			}
+			&.content-empty {
+				transform: none !important;
+				+ div {
+					margin-top: rem(10 * $gutter);
+				}
+			}
+		}
+		.entry-header {
+			>:first-child {
+				margin-top: 0;
+			}
+		}
+		h1 {
+			line-height: 1.2;
+			margin-top: rem(2 * $gutter);
+			margin-bottom: rem(2 * $gutter);
+		}
+		.entry-header__category {
+			font-size: rem(20px);
+			font-weight: $fw-light;
+			text-transform: uppercase;
+		}
+		.entry-header__date {
+			font-size: rem(20px);
+			font-weight: $fw-regular;
+			text-transform: uppercase;
+			margin-top: 1rem;
+		}
+		h2,h3,h4 {
+			color: $primary;
+		}
+
+	}
+}

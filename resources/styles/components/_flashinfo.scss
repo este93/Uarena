@@ -1,0 +1,123 @@
+.flashinfo-popup {
+	position: absolute;
+	display: none !important;
+	@media (min-width: $lg) {
+		&.uk-open {
+			display: block !important;
+		}
+	}
+	> .uk-offcanvas-bar {
+		left: 0;
+		right: 0;
+		width: 100vw;
+		bottom: auto;
+		transition: none;
+		background-image: url(./../img/2.common/bg-flash-info-violet-with-icon.svg);
+		background-position: center top;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		padding: 1rem $gutter 6*$gutter;
+	}
+	&.uk-open > .uk-offcanvas-bar {
+		left: 0;
+		right: 0;
+		//top: 0;
+	}
+
+	.uk-offcanvas-close {
+	    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	    top: auto;
+	    right: auto;
+	    bottom: 5px;
+	    left: 50%;
+	    background-color: white;
+	    border-radius: 50%;
+	    padding: $gutter !important;
+	    color: black !important;
+	    transform: translateX(-50%);
+	    line {
+	   		stroke-width: 2px;
+	    }
+	    &:hover {
+	    	opacity: 0.9;
+		    line {
+		   		stroke-width: 3px;
+		    }
+	    }
+	}
+	.flashinfo__content {
+	    display: flex;
+	    align-items: flex-start;
+	    color: white;
+	    >:first-child {
+			flex: 1 1 auto;
+	    }
+	    >:last-child {
+			flex: 0 0 auto;
+	    }
+	    .flashinfo__content-left {
+	    	font-size: rem(18px);
+	    	line-height: 1.2;
+	    	padding-top: 0.5rem;
+	    }
+	    .flashinfo__title {
+	    	text-transform: uppercase;
+	    	font-weight: $fw-extra-bold;
+	    }
+	    .flashinfo__description {
+
+	    }
+	    .flashinfo__content-right {
+	    	font-size: rem(14px);
+	    	font-weight: $fw-bold;
+	    }
+	}
+	.flashinfo__icones {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		svg {
+			font-size: rem(20px);
+			display: inline-block;
+			padding-right: 0.5em;
+		}
+		li {
+			display: flex;
+			padding: 0.4em 0.7em;
+			border: 1px solid;
+			border-radius: 0.5em;
+			margin-left: 0.7rem;
+			background-color: transparent;
+			transition: all 0.3s ease-out;
+			&:hover {
+				background-color: rgba(0,0,0,0.2);
+				color: white;
+				box-shadow: $hover-shadow;
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	&.flashinfo--vert {
+		> .uk-offcanvas-bar {
+			background-image: url(./../img/2.common/bg-flash-info-vert-with-icon.svg);
+		}
+		.flashinfo__content {
+			color: black;
+		}
+		.flashinfo__icones {
+			li {
+				color: black;
+				&:hover {
+					background-color: rgba(255,255,255,0.2);
+				}
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+}

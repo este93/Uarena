@@ -1,0 +1,135 @@
+// https://github.com/intuit/qb-animation-library/tree/master/scss/mixins
+
+
+@mixin buildKeyframe($name, $property, $from, $to) {
+  @keyframes plda-#{$name} {
+    from { 
+      #{$property}: #{$from};
+    }
+    to { 
+      #{$property}: #{$to};
+    }
+  }
+}
+
+@keyframes plda-ElasticBounceLeft {
+    0% {
+        transform:translateX(0);
+    }
+    50% {
+        transform:translateX(-10px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+@keyframes plda-ElasticBounceRight {
+    0% {
+        transform:translateX(0);
+    }
+    50% {
+        transform:translateX(10px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+
+
+/*
+ * GENERATE KEYFRAMES
+ */
+
+@include buildKeyframe(FadeEnter, opacity, 0, 1);
+
+@include buildKeyframe(FadeExit, opacity, 1, 0);
+
+@include buildKeyframe(GrowEnter, transform, scale($scale-2), none);
+
+@include buildKeyframe(Rotation, transform, rotateZ(0deg), rotateZ(360deg));
+
+@include buildKeyframe(UpEnter, transform, translateY($distance-2), none);
+
+@include buildKeyframe(DownEnter, transform, translateY(-$distance-2), none);
+
+
+/*
+ * GENERATE ANIMATION CLASSES
+ */
+
+// ENTRANCES
+
+@mixin plda-elastic-bounce-left {
+    animation: plda-ElasticBounceLeft $duration-7 $ease-slow backwards;
+}
+@mixin plda-elastic-bounce-right {
+    animation: plda-ElasticBounceRight $duration-7 $ease-slow backwards;
+}
+
+@mixin plda-fade-enter {
+    animation: plda-FadeEnter $duration-4 $ease-slow backwards;
+}
+@mixin plda-grow-enter {
+    animation: plda-FadeEnter $duration-3 $ease-slow backwards,
+               plda-GrowEnter $duration-7 $ease-spirited-entrance backwards;
+    transform-origin: 50% 50% ;
+}
+@mixin plda-slideUp-enter {
+    animation: plda-FadeEnter $duration-7 $ease-slow backwards,
+               plda-UpEnter $duration-7 $ease-entrance backwards;
+}
+@mixin plda-slideDown-enter {
+    animation: plda-FadeEnter $duration-7 $ease-slow backwards,
+               plda-DownEnter $duration-7 $ease-entrance backwards;
+}
+
+// EXITS
+@mixin plda-fade-exit {
+    animation: plda-FadeExit $duration-3 $ease-slow forwards;
+}
+
+// INFINITE
+@mixin plda-rotation {
+    animation: plda-Rotation $duration-10 linear infinite;
+    transform-origin: 50% 50% ;
+}
+
+
+// TRANSITIONS
+@mixin plda-transition-width {
+    transition: $transition-width;
+    will-change: width;
+} 
+@mixin plda-transition-height {
+    transition: $transition-height;
+    will-change: height;
+} 
+@mixin plda-transition-opacity {
+    transition: $transition-opacity;
+    will-change: opacity;
+} 
+@mixin plda-transition-color {
+    transition: $transition-color;
+    will-change: color;
+}
+@mixin plda-transition-rotation {
+    transition: $transition-transform;
+    will-change: transform;
+}
+@mixin plda-transition-slideUp {
+    overflow:hidden;
+    & > * {
+        transform: translateY(-100%);
+        transition: $transition-transform;
+        will-change: transform;
+    }
+}
+@mixin plda-transition-slideDown {
+    overflow:hidden;
+    & > * {
+        transform: translateY(0%);
+        transition: $transition-transform;
+        transition-delay: 0.3s;
+        will-change: transform;
+    }
+}

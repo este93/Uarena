@@ -1,0 +1,104 @@
+.block--plan-salle {
+    display: grid;
+    grid-template-areas:
+        "zone_titres" "zone_images" "zone_descriptions";
+	grid-template-columns: 1fr;
+	grid-gap: 2rem;
+    @media (min-width: $md) {
+		grid-template-columns: 2fr 3fr;
+	    grid-gap: 4rem;
+	    grid-template-areas:
+	        "zone_titres zone_images"
+	        "zone_descriptions zone_images";
+    }
+	ul {
+		margin: 0;
+		list-style:none;
+		padding: 0;
+	}
+	.block__heading {
+		grid-area: zone_titres;
+		.entete-cell {
+			font-weight: $fw-light;
+			font-size: rem(12px);
+		}
+		ul {
+			background-color: white;
+			border-radius: 1rem;
+			padding: 0;
+			box-shadow: $hover-shadow;
+			overflow: hidden;
+			li {
+				padding: 0.75rem 2*$gutter;
+				margin: 0;
+				background-image: none;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				text-transform: uppercase;
+				cursor: pointer;
+				position: relative;
+				&:last-child {
+					border-bottom: none;
+				}
+				&::before {
+					content: '';
+					width: 0.6em;
+					height: 0.6em;
+					border-radius: 50%;
+					border: 1px solid currentColor;
+					background-color: white;
+					margin-right: 1em;
+					display: inline-block;
+					transition: $transition-color;
+					position: relative;
+					z-index: 1;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					width: 0;
+					left: 0;
+					background-color: #e9e7ed;
+					opacity: 0.5;
+					display: inline-block;
+					transition: $transition-width;
+					z-index: 0;
+				}
+				&:hover {
+					&::before {
+						background-color: $primary;
+					}
+					&::after {
+						width: 100%;
+					}
+				}
+				&.uk-active{
+					background-color: #e9e7ed;
+					&::before {
+						background-color: $green;
+					}
+				}
+				a {
+					position: relative;
+					color: black;
+					z-index: 1;
+					font-weight: $fw-light;
+				}	
+			}
+		}
+	}
+	.block__image {
+		grid-area: zone_images;
+		position: relative;
+		ul {
+			li {
+				position: relative;
+				max-width: 100%;
+			}
+		}
+	}
+	.block__content {
+		grid-area: zone_descriptions;
+	}
+}

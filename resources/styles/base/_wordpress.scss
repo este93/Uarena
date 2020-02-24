@@ -1,0 +1,155 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+// .alignnone {
+// 	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+// }
+
+// .aligncenter,
+// div.aligncenter {
+// 	display: block;
+// 	margin: ($gutter / 2) auto ($gutter / 2) auto;
+// }
+
+// .alignright {
+// 	float: right;
+// 	margin: ($gutter / 2) 0 ($gutter * 2) ($gutter * 2);
+// }
+
+// .alignleft {
+// 	float: left;
+// 	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+// }
+
+.alignwide {
+  	margin-left: -50px;
+  	margin-right: -50px;
+  	.kt-accordion-panel & {
+	  	margin-left: -2rem;
+	  	margin-right: -2rem;
+  	}
+}
+
+.alignfull {
+	margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    max-width: 100vw;
+    	width: 100vw;
+}
+
+a img.alignright {
+	float: right;
+	margin: ($gutter / 2) 0 ($gutter * 2) ($gutter * 2);
+}
+
+a img.alignnone {
+	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: $white;
+	border: 1px solid $light-grey;
+	max-width: 96%;
+
+	/* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+}
+
+.wp-caption.alignleft {
+	margin: ($gutter / 2) ($gutter * 2) ($gutter * 2) 0;
+}
+
+.wp-caption.alignright {
+	margin: ($gutter / 2) 0 ($gutter * 2) ($gutter * 2);
+}
+
+/* Gutenberg Buttons */
+.wp-block-button__link{
+	@include btn-base();
+	&.no-border-radius {
+		border-radius: 8px !important;
+	}
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+.wp-block-spacer[style="height:80px"] {
+	@media (max-width:#{$md - 0.1}) {
+		height: 2rem !important;
+	}
+}
+.wp-block-spacer[style="height:60px"] {
+	@media (max-width:#{$md - 0.1}) {
+		height: 1.5rem !important;
+	}
+}
+.wp-block-spacer[style="height:40px"] {
+	@media (max-width:#{$md - 0.1}) {
+		height: 1rem !important;
+	}
+}
+
+.has-larger-font-size,
+.has-huge-font-size {
+    line-height: 1.2;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+
+	/* Above WP toolbar. */
+}

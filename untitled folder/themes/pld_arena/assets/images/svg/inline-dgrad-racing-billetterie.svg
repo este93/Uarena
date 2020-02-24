@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" class="svg-dgrad-racing" width="860px" height="896px" viewBox="0 0 860 896" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="-25%" y1="0%" x2="100%" y2="0%" id="dgrad-racing">
+            <stop stop-color="#b7ffff" offset="0%"></stop>
+            <stop stop-color="#0032c0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dgrad-racing-billetterie" fill="url(#dgrad-racing)" fill-rule="nonzero">
+            <polygon id="Shape" points="0.00905263158 0 860 0 860 896 0.00905263158 896"></polygon>
+        </g>
+    </g>
+</svg>

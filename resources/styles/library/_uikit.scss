@@ -1,0 +1,54 @@
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+
+@import "~uikit/src/scss/components/icon.scss";
+@import "~uikit/src/scss/components/form-range.scss";
+@import "~uikit/src/scss/components/form.scss"; // After: Icon, Form Range
+
+
+// JavaScript
+@import "~uikit/src/scss/components/accordion.scss";
+@import "~uikit/src/scss/components/drop.scss"; // After: Card
+@import "~uikit/src/scss/components/dropdown.scss"; // After: Card
+@import "~uikit/src/scss/components/modal.scss"; // After: Close
+@import "~uikit/src/scss/components/lightbox.scss"; // After: Close
+@import "~uikit/src/scss/components/slideshow.scss";
+@import "~uikit/src/scss/components/slider.scss";
+@import "~uikit/src/scss/components/sticky.scss";
+@import "~uikit/src/scss/components/offcanvas.scss";
+@import "~uikit/src/scss/components/switcher.scss";
+@import "~uikit/src/scss/components/leader.scss";
+// Scrollspy
+// Toggle
+// Scroll
+
+// Additional
+@import "~uikit/src/scss/components/iconnav.scss";
+@import "~uikit/src/scss/components/notification.scss";
+@import "~uikit/src/scss/components/tooltip.scss";
+@import "~uikit/src/scss/components/placeholder.scss";
+@import "~uikit/src/scss/components/progress.scss";
+@import "~uikit/src/scss/components/sortable.scss";
+@import "~uikit/src/scss/components/countdown.scss";
+
+// Utilities
+@import "~uikit/src/scss/components/animation.scss";
+@import "~uikit/src/scss/components/width.scss";
+@import "~uikit/src/scss/components/height.scss";
+@import "~uikit/src/scss/components/text.scss";
+@import "~uikit/src/scss/components/column.scss";
+@import "~uikit/src/scss/components/cover.scss";
+@import "~uikit/src/scss/components/background.scss";
+@import "~uikit/src/scss/components/align.scss";
+@import "~uikit/src/scss/components/svg.scss";
+@import "~uikit/src/scss/components/utility.scss";
+@import "~uikit/src/scss/components/flex.scss"; // After: Utility
+@import "~uikit/src/scss/components/margin.scss";
+@import "~uikit/src/scss/components/padding.scss";
+@import "~uikit/src/scss/components/position.scss";
+@import "~uikit/src/scss/components/transition.scss";
+@import "~uikit/src/scss/components/visibility.scss";
+@import "~uikit/src/scss/components/inverse.scss";
+
+// Need to be loaded last
+@import "~uikit/src/scss/components/print.scss";

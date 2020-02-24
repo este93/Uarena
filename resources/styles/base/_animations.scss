@@ -1,0 +1,21 @@
+
+/*
+ * ANIMATIONS CLASSES
+ */
+
+ // ENTRANCES
+.plda-fade-enter { @include plda-fade-enter; }
+
+// EXITS
+.plda-fade-exit { @include plda-fade-exit; }
+
+// INFINITE
+.plda-rotation { @include plda-rotation; }
+
+// TRANSITIONS
+.animation-slideUp {
+	@include plda-transition-slideUp();
+}
+.animation-slideDown {
+	@include plda-transition-slideDown();
+}

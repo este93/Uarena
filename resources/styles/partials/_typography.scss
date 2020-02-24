@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+html {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(12 + 4 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: $base-fs;
+  }
+} 
+
+body {
+	font-family: $base-font;
+	font-weight: 400;
+	font-size: $base-fs-rem;
+	line-height: 1.5;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1,
+.h1 {
+	@include font-size(26.6667px);
+	font-weight: $fw-extra-bold;
+	text-transform: uppercase;
+
+	@media (min-width: #{$sm}) {
+		@include font-size(40px);
+	}
+}
+.subh1 {
+	@include font-size(16.625px);
+	font-weight: $fw-extra-bold;
+	text-transform: uppercase;
+	@media (min-width: #{$sm}) {
+		@include font-size(30px);
+	}
+}
+
+h2,
+.h2 {
+	@include font-size(35px, 1.2);
+	font-weight: $fw-extra-bold;
+	text-transform: uppercase;
+
+	@media (max-width: #{$sm}) {
+		@include font-size(20px, rem(24px));
+	}
+}
+.subh2 {
+	@include font-size(22px);
+	font-weight: $fw-thin;
+	text-transform: uppercase;
+}
+
+h3,
+.h3 {
+	@include font-size(22px, rem(26px));
+	font-weight: $fw-bold;
+
+	@media (max-width: #{$sm}) {
+		@include font-size(18px, rem(22px));
+	}
+}
+
+h4,
+.h4 {
+	@include font-size(20px, rem(26px));
+
+	@media (max-width: #{$sm}) {
+		@include font-size(15px, rem(20px));
+	}
+}
+
+h5,
+.h5 {
+	@include font-size(18px);
+
+	@media (max-width: #{$sm}) {
+		@include font-size(15px);
+	}
+}
+h6,
+.h6 {
+	@include font-size(1rem);
+	text-transform: uppercase;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+	@media (max-width: #{$sm}) {
+		@include font-size(1rem);
+	}
+}
+
+.titre-hero {
+	font-size: rem(35px);
+	text-transform: uppercase;
+	font-weight: $fw-extra-light;
+	@media (min-width:$md) {
+		font-size: rem(60px);
+	}
+}
+.titre-categorie,
+.page .entry-title {
+	font-size: rem(35px) !important;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-weight: $fw-extra-light;
+	letter-spacing: 0.25em;
+	text-align: center;
+	margin: 0;
+	@media (min-width:$md) {
+		font-size: rem(40px) !important;
+	}
+}
+.page .entry-title {
+	color: white;
+}
+
+.titre-20 {
+	font-size: rem(20px);
+	text-transform: uppercase;
+}
+
+.fz-24 {
+	font-size: 1.5rem;
+}
+
+small,
+.small {
+	@include font-size(15px, 20px, 0.28px);
+}
+
+// alignments
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+// Modifiers
+.text-bold {
+	font-weight: 700;
+}
+
+.text-semibold {
+	font-weight: 600;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.reduce-text-80 {
+	font-size: 0.8em;
+}
+
+.no-line-height {
+	line-height: 1em !important;
+}
+
+blockquote {
+	max-width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	box-sizing: border-box;
+	position: relative;
+	&::before,
+	&::after {
+		background-image: url(./../img/1.icons/icon-quote-left.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		content: '';
+		position: absolute;
+		left: -28px;
+		top: 0;
+		width: 28px;
+		height: 30px;
+	}
+	&::after {
+		background-image: url(./../img/1.icons/icon-quote-right.svg);
+		left: auto;
+		top: auto;
+		bottom: 0;
+		right: -28px;
+	}
+	p {
+		font-size: rem(20px);
+		font-weight: $fw-bold;
+		line-height: rem(30px);
+		&::first-letter {
+			font-size: rem(35px);
+			font-weight: $fw-light;
+		}
+	}
+	cite {
+		font-size: rem(18px);
+		font-style: italic;
+	}
+}
+

@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+# Import Modules
+--------------------------------------------------------------*/
+@import '~normalize-scss/sass/normalize/import-now';
+@import '~swiper/css/swiper.min.css';
+//@import '~uikit/dist/css/uikit.min.css';
+@import 'library/uikit.scss';
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/body';
+@import 'base/containers';
+@import 'base/grid';
+@import 'base/spacing';
+@import 'base/wordpress';
+@import 'base/forms';
+
+/*--------------------------------------------------------------
+# Partials
+--------------------------------------------------------------*/
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/icons';
+@import 'partials/links';
+@import 'partials/colours';
+@import 'partials/helpers';
+@import 'partials/media';
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/sections';
+@import 'components/searchform';
+@import 'components/flashinfo';
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import 'blocks/common';
+@import 'blocks/typography';
+@import 'blocks/card';
+@import 'blocks/filters';
+@import 'blocks/lists';
+@import 'blocks/dropdown';
+@import 'blocks/accordion';
+@import 'blocks/sliders';
+@import 'blocks/modal';
+@import 'blocks/map';
+@import 'blocks/plan_salle';
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import 'pages/common';
+@import 'pages/pages';
+@import 'pages/home';
+@import 'pages/blog';
+@import 'pages/produits';
+@import 'pages/entreprises';
+@import 'pages/articles';
+@import 'pages/defense';

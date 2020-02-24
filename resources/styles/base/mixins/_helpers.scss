@@ -1,0 +1,56 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin full-space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+// block pleine largeur
+@mixin full_width_section() {
+    left: 50%;
+    transform: translateX(-50vw);
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 100vw;
+}
+
+// fond block pleine largeur
+@mixin full_width_bg( $bg-color:transparent, $bg-image:none) {
+  &::before {
+  	@include full_width_section();
+    background-color: $bg-color;
+    background-image: $bg-image;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+
+@mixin sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}

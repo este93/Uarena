@@ -1,0 +1,13 @@
+.swiper-wrapper {
+	height: auto;
+}
+.swiper-container {
+	visibility: hidden;
+}
+.fontawesome-i2svg-active {
+	.swiper-container{
+		animation-delay:1s;
+		visibility: visible;
+		@include plda-slideUp-enter;
+	}
+}

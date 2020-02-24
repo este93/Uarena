@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" class="inline-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="99" viewBox="0 0 95 99">
+  <defs>
+    <linearGradient id="dgrad-vert" x1="-0.25" y1="0.5" x2="1.25" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff0"/>
+      <stop offset="0.37" stop-color="#80ff00"/>
+      <stop offset="1" stop-color="lime"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_21" data-name="Rectangle 21" width="95" height="99" fill="url(#dgrad-vert)"/>
+</svg>

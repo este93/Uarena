@@ -1,0 +1,386 @@
+
+/*** PLACEHOLDER STYLING ***/
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+input:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+input::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+textarea:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+.form-row {
+	display: flex;
+}
+
+.help-block.error {
+	color: red;
+}
+
+.form-callback {
+	.bg-image.uk-svg {
+		position: absolute;
+		opacity: 0.6;
+		.start-stop {
+			stop-color: #f0f;
+		}
+		.end-stop {
+			stop-color: #0000b4;
+		}
+		.page-entreprise & {
+			.start-stop {
+				stop-color: $gold;
+			}
+			.end-stop {
+				stop-color: $bleu-vip;
+			}
+		}
+	}
+	.callback-message {
+		position: relative;
+	}
+	h2.titre-categorie {
+		margin-bottom: 2rem;
+		color: white;
+		.page-entreprise & {
+			color: $gold;
+		}
+	}
+	p{
+		color: white;
+	}
+}
+
+.plda-form,
+.caldera-grid {
+	* + .uk-margin {
+		margin-top: $gutter !important;
+	}
+	.uk-margin {
+		margin-bottom: $gutter;
+	}
+	.uk-margin:last-child {
+		margin-bottom: 0;
+	}
+	legend,
+	.uk-legend {
+		font-size: 1rem;
+		line-height: 1.2;
+		@media (min-width: $sm){
+			font-size: rem(14px);
+		}
+	}
+	.help-text {
+		font-size: 1rem;
+		line-height: 1.2;
+		font-weight: $fw-light;
+		font-style: italic;
+		opacity: 0.5;
+		@media (min-width: $sm){
+			font-size: rem(14px);
+		}
+	}
+	input:not([type="submit"]), textarea, select,
+	.uk-input:not([type="submit"]), .uk-textarea, .uk-select,
+	.form-control {
+		&,
+		&:focus {
+			background-color: rgba(0,0,0,0.25);
+			border: 1px solid white;
+			border-radius: 8px;
+			padding: 10px;
+			opacity: 0.5;
+			color: white;
+			font-size: 1rem;
+			text-transform: none;
+			@include plda-transition-opacity();
+			@media (min-width: $sm){
+				font-size: rem(14px);
+			}
+		}
+		&:placeholder-shown {
+			opacity: 0.5 !important;
+		}
+		&::placeholder {
+			color: rgba(white, 0.5);
+			text-transform: uppercase;
+		}
+
+		&:not(:placeholder-shown),
+		&:focus {
+			opacity: 1;
+		}
+		&:valid {
+			opacity: 1;
+		}
+		&:invalid {
+			opacity: 1;
+		}
+	}
+    /*** TEXTAREA ***/
+    textarea {
+    	&,
+    	&.form-control
+		{
+	        height: 10em;
+	        transition: height .3s ease-out;
+        }
+    }
+	input[type="submit"] {
+		font-size: rem(17px);
+	}
+}
+.caldera-grid {
+	* + .form-group {
+		margin-top: $gutter !important;
+	}
+	.form-group {
+		margin-bottom: $gutter;
+	}
+	.form-group:last-child {
+		margin-bottom: 0;
+	}
+	.form-control {
+		@extend .uk-input;
+	}
+	.form-control:not(input) {
+		line-height: 1.2
+	}
+	p, span {
+		color: white !important;
+	}
+	.col-sm-6 + .col-sm-6 {
+		@media (max-width: #{$md - 0.1}){
+			margin-top: 10px;
+		}
+
+	}
+	.col-sm-6 > :first-child:last-child {
+		&, 
+		>div,
+		textarea {
+			height: 100%;
+		}
+	}
+	.btn-default {
+		@extend .btn-concert;
+		padding: 0.75rem 1.5rem;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+		&:disabled,
+			&.disabled {
+				background-image: $gradient-disabled;
+				pointer-events: none;
+			}
+	}
+	.btn-default {
+		float: right;
+	}
+}
+.caldera_forms_form.active {
+	@include plda-fade-exit;
+	animation-delay: 1s;
+}
+
+.plda-select {
+	font-weight: $fw-regular;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: $input-height;
+	color: white;
+	font-size: rem(14px);
+	text-transform: none;
+	.select-hidden {
+	  display: none;
+	  visibility: hidden;
+	  padding-right: 10px;
+	}
+	.select-styled {
+		position: absolute; 
+		display: flex;
+    	align-items: center;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 8px 15px;
+		@include transition(all 0.2s ease-in);
+		background-color: $primary;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		z-index: 0;
+		&::before {
+			background-image: url(./../img/3.dgrad/fond-dgrad-cercles-violets.svg);
+			background-repeat: no-repeat;
+			background-position: -9px -200px;
+			background-size: 1000px auto;
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+		&::after {
+			content:url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-down' class='svg-inline--fa fa-chevron-down fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 448 512'%3E%3Cpath fill='white' d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'%3E%3C/path%3E%3C/svg%3E");
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			box-sizing: border-box;
+			padding: 0.7rem 1rem;
+			border-left: 1px solid white;
+		}
+		&.is-placeholder {
+			opacity: 0.5;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		&:active, &.active {
+			opacity: 1;
+			background-color: white;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			&::after {
+				border-left: none;
+				border-right: 1px solid white;
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.select-options {
+		display: none; 
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		z-index: 999;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-image: url(./../img/3.dgrad/fond-dgrad-cercles-violets.svg);
+		background-repeat: no-repeat;
+		background-position: -9px -239px;
+		background-size: 1000px auto;
+		background-color: white;
+		max-height: 260px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		border-radius: 0px 0px 8px 8px;
+		border: 1px solid white;
+		border-top: none;
+		&[data-simplebar] {
+			-ms-overflow-style: none; 
+		}
+		li {
+			margin: 0;
+			padding: 0.5rem 0;
+			text-indent: 1rem;
+			max-width: 100%;
+			@include transition(all 0.15s ease-in);
+			&:hover {
+			  font-weight: $fw-bold;
+			  background-color: rgba(black,0.5);
+			}
+			&[rel=""] {
+			  display: none;
+			}
+		}
+	}
+}
+
+
+/* Basic styles */
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 2em;
+  cursor: pointer;
+}
+label::before,
+label::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+input[type="checkbox"] + label::before {
+  content: " ";
+  border: 1px solid currentColor;
+  border-radius: 20%;
+}
+/* Checkbox */
+input[type="checkbox"] + label::after {
+  content: "\02143";
+  color: currentColor;
+  line-height: 1;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: $fw-bold;
+  left: 0.1em;
+  top: 0.1em;
+}
+/* Radio */
+input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+input[type=radio] + label::after {
+  content: " ";
+  top: .25em;
+  left: .25em;
+  width: 75%;
+  height: 75%;
+  background: transparent;
+  border: .2em solid currentColor;
+  border-radius: 50%;
+}
+/* :checked */
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  background: transparent;
+  border-color: currentColor;
+}
+input[type="checkbox"] + label::after,
+input[type=radio] + label::after {
+		  transform:rotate(45deg) scale(0);
+}
+input[type="checkbox"]:checked + label::after,
+input[type=radio]:checked + label::after {
+	transform: rotate(45deg) scale(1);
+}
+/* Transition */
+label::before,
+label::after {
+  transition: .25s all ease;
+}
+

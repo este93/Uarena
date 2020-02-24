@@ -1,0 +1,34 @@
+<svg class="svg-inline--fa fa-w-16 btn-service-fond" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 123 123" height="123" width="123">
+<defs>
+    <style>
+      .disque-fond {
+        fill: currentColor;
+      }
+      .disque {
+        fill: url(#grad-service-fond);
+      }
+
+      .pointilles {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        stroke-dasharray: 0.001 6;
+        stroke: url(#grad-pointille);
+      }
+    </style>
+    <linearGradient id="grad-pointille" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#000078" class="end-stop"></stop>
+      <stop offset="1" stop-color="#f25bff" class="start-stop"></stop>
+    </linearGradient>
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="grad-service-fond">
+      <stop offset="0" stop-color="#f25bff" class="start-stop"></stop>
+      <stop offset="1" stop-color="#000078" class="end-stop"></stop>
+    </linearGradient>
+  </defs>
+  <circle class="disque-fond" r="50" cx="61.5" cy="61.5"></circle>
+  <circle class="disque" r="50" cx="61.5" cy="61.5"></circle>
+  <g class="pointilles_container">
+    <circle id="pointilles" class="pointilles" cx="61.5" r="60" cy="61.5"></circle>
+  </g>
+</svg>

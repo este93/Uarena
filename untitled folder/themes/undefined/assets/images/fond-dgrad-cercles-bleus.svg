@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="1000" height="1000" fill="none"/>
+    </clipPath>
+    <linearGradient id="dgrad-cercles-bleus-1" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0032c0"/>
+      <stop offset="1" stop-color="#b7ffff"/>
+    </linearGradient>
+    <linearGradient id="dgrad-cercles-bleus-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.5" stop-color="#b7ffff"/>
+      <stop offset="1" stop-color="#0032c0"/>
+    </linearGradient>
+    <linearGradient id="dgrad-cercles-bleus-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.5" stop-color="#0032c0"/>
+      <stop offset="1" stop-color="#b7ffff"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_1" data-name="Groupe 1" clip-path="url(#clip-path)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="440.3" height="1000" transform="translate(559.7)" fill="url(#dgrad-cercles-bleus-1)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="750" cy="750" r="750" transform="translate(-750 -250)" fill="url(#dgrad-cercles-bleus-2)"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="500" cy="500" r="500" transform="translate(-500 0)" fill="url(#dgrad-cercles-bleus-2)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="375" cy="375" r="375" transform="translate(-375 125)" fill="url(#dgrad-cercles-bleus-3)"/>
+  </g>
+</svg>

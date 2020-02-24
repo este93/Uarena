@@ -1,0 +1,99 @@
+body {
+	>iframe {
+		display: none;
+	}
+}
+#page {
+	overflow: hidden;
+}
+.page {
+	.row-main{
+		padding:  rem($gutter * 2) 0;
+        @media (min-width:$sm) {
+			padding:  rem($gutter * 4) rem($gutter * 2);
+        }
+	}
+}
+.single {
+	article {
+		@at-root .entry-content .bloc-fond-blanc,
+		& .entry-content {
+			h2 {
+				font-size: rem(24px);
+				font-weight: $fw-extra-bold;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-size: rem(22px);
+				font-weight: $fw-extra-light;
+				text-transform: uppercase;
+			}
+			h4 {
+				font-size: rem(22px);
+				font-weight: $fw-bold;
+			}
+		}
+	}
+}
+.site-content {
+	position: relative;
+	overflow: hidden;
+	background-color: $primary;
+	@include arrondi-basdepage();
+}
+.bg-produit {
+	background-image: url(./../img/3.dgrad/fond-dgrad-cercles-violets.svg);
+	background-size: cover;
+	background-position: left top;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	&.content-empty {
+		height: 370px;
+	}	
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $gradient-over-image-produit;
+	}
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+
+.entry-header {
+	width: 100%;
+}
+article>.container {
+	position: relative;
+}
+
+
+.entry-content {
+	.caldera-grid {
+		@media (min-width: $md) {
+			form {
+				padding: #{5 * $gutter} #{9 * $gutter};
+				background-color: rgba(black, 0.25);
+				border-radius: 25px;
+				margin-left: 3 * $gutter;
+				margin-right:  3 * $gutter;
+				.row {
+					margin-right: -1.5 * $gutter;
+					margin-left: -1.5 * $gutter;
+				}
+				[class^="col-"], [class*=" col-"] {
+					padding-left: 1.5 * $gutter;
+					padding-right: 1.5 * $gutter;
+				}
+			}
+		}
+	}
+}

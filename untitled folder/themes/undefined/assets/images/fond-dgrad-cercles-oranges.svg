@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="340" viewBox="0 0 340 340">
+  <defs>
+    <linearGradient id="dgrad-cercles-orange" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.5" stop-color="#ffbd50"/>
+      <stop offset="1" stop-color="#ff0032"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="BG_DgraD" data-name="BG DgraD" width="340" height="340" transform="translate(5159 3329)" fill="#1d0851"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="imageMask" width="1920" height="3154" transform="translate(4198 512)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="crop" width="340" height="340" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="340" height="340" fill="url(#dgrad-cercles-orange)"/>
+    </clipPath>
+    <linearGradient id="dgrad-cercles-orange-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff0032"/>
+      <stop offset="1" stop-color="#ffbd50"/>
+    </linearGradient>
+    <linearGradient id="dgrad-cercles-orange-6" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.05" stop-color="#ff0032"/>
+      <stop offset="1" stop-color="#ffbd50"/>
+    </linearGradient>
+  </defs>
+  <g id="Clip" transform="translate(-5159 -3329)" clip-path="url(#clip-path)">
+    <g id="DgraD-orange" opacity="0.749" clip-path="url(#clip-path-2)">
+      <g id="DgraD-orange-2" data-name="DgraD-orange" transform="translate(5159 3329)" clip-path="url(#clip-path-3)">
+        <rect id="Rectangle_51" data-name="Rectangle 51" width="340" height="340"/>
+        <g id="Groupe_179" data-name="Groupe 179">
+          <rect id="Rectangle_52" data-name="Rectangle 52" width="340" height="340" fill="url(#linear-gradient)"/>
+          <g id="Groupe_178" data-name="Groupe 178" clip-path="url(#clip-path-4)">
+            <rect id="Rectangle_53" data-name="Rectangle 53" width="149.702" height="340" transform="translate(190.298)" fill="url(#dgrad-cercles-orange-3)"/>
+            <circle id="Ellipse_36" data-name="Ellipse 36" cx="255" cy="255" r="255" transform="translate(-255 -85)" fill="url(#dgrad-cercles-orange)"/>
+            <circle id="Ellipse_37" data-name="Ellipse 37" cx="170" cy="170" r="170" transform="translate(-170 0)" fill="url(#dgrad-cercles-orange)"/>
+            <circle id="Ellipse_38" data-name="Ellipse 38" cx="127.5" cy="127.5" r="127.5" transform="translate(-127.5 42.5)" fill="url(#dgrad-cercles-orange-6)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

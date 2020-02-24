@@ -1,0 +1,74 @@
+@each $colour, $hex in $colours {
+	.text-#{$colour} {
+		color: $hex;
+	}
+
+	.bg-#{$colour} {
+		background-color: $hex;
+	}
+
+	.border-#{$colour} {
+		border-color: $hex;
+	}
+}
+
+
+@each $color, $value in $gradients-text {
+  .text-#{$color} {
+    @include gradient-text($value);
+  }
+}
+
+.text-grad-context {
+	@include gradient-text($gradient-green-text);
+}
+
+@each $genre, $gradient in $genre-grad-text {
+  [data-theme="genre_evenement_#{$genre}"] .text-grad-context,
+  .text-grad-#{$genre},
+  .genre_evenement_#{$genre} .text-grad-context {
+    @include gradient-text($gradient);
+  }
+}
+
+// Customize text selection
+::selection {
+	background: $black;
+	color: $white;
+}
+
+::-moz-selection {
+	background: $black;
+	color: $white;
+}
+
+// website bg gradients
+@each $name, $value in $gradients {
+
+	.bg-#{$name} {
+		background: $value;
+	}
+
+}
+
+// gradient in svg
+
+svg.svg-color-context .start-stop {
+	stop-color: lime;
+}
+svg.svg-color-context .end-stop {
+	stop-color: #ff0;
+}
+
+
+
+@each $genre, $start-color, $end-color in $svg-gradient-start-stop {
+  [data-context="genre_evenement_#{$genre}"] svg.svg-color-context .start-stop {
+		stop-color: $start-color;
+	}
+  [data-context="genre_evenement_#{$genre}"] svg.svg-color-context .end-stop {
+		stop-color: $end-color;
+	}
+}
+
+

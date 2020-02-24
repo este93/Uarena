@@ -1,0 +1,19 @@
+.page {
+	article>.container {
+		@media (min-width:$lg) {
+			max-width: calc(#{$contracted-container-width} + 2.5rem + 20px);
+			margin-left: auto;
+			margin-right:  auto;
+		}
+	}
+}
+
+.page {
+	.entry-content {
+		.bloc-fond-blanc{
+			h2,h3,h4 {
+				color: $primary;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+.editor-styles-wrapper {
+	@import 'partials/typography';
+}
+.editor-styles-wrapper {
+	@import 'blocks/typography';
+}
+.editor-styles-wrapper {
+	@import 'blocks/cta';
+}

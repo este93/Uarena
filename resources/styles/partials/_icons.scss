@@ -1,0 +1,238 @@
+.stack-circle {
+	width: 1em !important;
+	border: 0px solid;
+	border-radius: 50%;
+	background-color: currentColor;
+	padding: 0.25em;
+	path {
+		color: $primary;
+	}
+}
+
+.fa-euro-sign {
+	left:-0.1em;
+}
+
+.icon-pastille {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(40%,-50%);
+	line-height: 0.7;
+	#BG_Pastille {
+		filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+		@media (min-width: $sm) {
+			filter: none;
+		}
+	}
+}
+.pastille__label {
+	align-items: center;
+	bottom: 0;
+	color: black;
+	display: flex;
+	font-size: 0.75rem;
+	font-weight: $fw-bold;
+	justify-content: center;
+	left: 0;
+	line-height: 1.2;
+	margin: auto;
+	max-width: 80%;
+	width: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	transform: rotate(-15deg);
+	z-index: 1;
+	@media (min-width: $sm) {
+		font-size: 9px;
+	}
+}
+
+
+.stack-outline-circle {
+	border: 2px solid currentColor;
+	background-color: transparent !important;
+	path {
+		color: currentColor;
+	}
+}
+.stack-outline-circle:hover {
+	background-color: currentColor !important;
+	path {
+		color: white;
+		fill: white;
+	}
+}
+
+.swiper-button-disabled .plda-icon-context.stack-circle {
+	border: 2px solid white;
+	background-color: transparent !important;
+	path {
+		color: white;
+	}
+}
+
+
+@each $genre, $gradient in $genre-grad {
+  [data-context="genre_evenement_#{$genre}"] .plda-icon-context.stack-circle:hover {
+    background-image: $gradient;
+	path {
+		color: white;
+	}
+  }
+}
+@each $genre, $color in $genre-colors {
+	[data-context="genre_evenement_#{$genre}"] .plda-icon-context.stack-circle {
+		background-color: $color;
+		path {
+			color: white;
+		}
+	}
+	[data-context="genre_evenement_#{$genre}"] .plda-icon-context.stack-circle.disabled,
+	[data-context="genre_evenement_#{$genre}"] .swiper-button-disabled .plda-icon-context.stack-circle {
+		border: 2px solid $color;
+		background-color: transparent !important;
+		path {
+			color: $color;
+		}
+	}
+}
+
+[data-context="genre_evenement_offre"] .plda-icon-context.stack-circle,
+[data-context="genre_evenement_vip-theme"] .plda-icon-context.stack-circle,
+[data-context="genre_evenement_offre"] .plda-icon-context.stack-circle:hover,
+[data-context="genre_evenement_vip-theme"] .plda-icon-context.stack-circle:hover {
+	path {
+		color: $bleu-vip;
+	}
+}
+[data-context="genre_evenement_green-theme"] .plda-icon-context.stack-circle,
+[data-context="genre_evenement_green-theme"] .plda-icon-context.stack-circle:hover {
+	path {
+		color: black;
+	}
+}
+
+// deco
+.deco-cercles {
+    max-width: 100%;
+    width: 920px;
+    margin: auto;
+    height: 10px;
+    .page-entreprise & {
+    	display: none;
+    }
+    .forme-disque {
+        height: 2.375rem;
+        width: 2.375rem;
+        display: inline-block;
+        border-radius: 50%;
+        &:first-child {
+        	transform: translateY(-10px);
+        }
+        &:last-child {
+       		transform: scale(0.6) translate(10%,50%);
+        }
+    }
+}
+
+
+
+/* Gutenberg sliders blocs Nav buttons*/
+.entry-content.entry-content {
+	.wp-block-kadence-advancedgallery {
+		overflow: visible;
+	}
+	.kt-blocks-carousel .slick-prev,
+	.kt-blocks-carousel .slick-next {
+		position: absolute;
+		display: block;
+		height: 40px;
+		width: 40px;
+		line-height: 0px;
+		font-size: 0px;
+		cursor: pointer;
+		background: $dark-green;
+		color: $primary;
+		top: 50%;
+		transform: translate(0, -50%);
+		padding: 0;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		transition: background .4s ease-in-out;
+		z-index: 1;
+		border-radius: 50%;
+		opacity: 1 !important;
+		&:hover {
+			background-image: $gradient-green;
+		}
+		.genre_evenement_racing92 & {
+			color: white;
+			background: $titres-couleur-racing;
+			&:hover {
+				background-image: $bg-gradient-racing;
+			}
+		}
+		.type_offre_vip & {
+			color: white;
+			background: $gold;
+			&:hover {
+				background-image: $bg-gradient-event-offres;
+			}
+		}
+	}
+	.kt-blocks-carousel .slick-prev {
+		left: -20px !important;
+	}
+	.kt-blocks-carousel .slick-next {
+		right: -20px !important;
+	}
+	.kt-blocks-carousel .slick-prev::before {
+		border-style: solid;
+		border-width: 3px 3px 0 0;
+		content: '';
+		display: inline-block;
+		height: 10px;
+		position: relative;
+		top: 0px;
+		left: 2px;
+		transform: rotate(-135deg);
+		vertical-align: top;
+		width: 10px;
+	}
+	.kt-blocks-carousel .slick-next::before {
+		border-style: solid;
+		border-width: 3px 3px 0 0;
+		content: '';
+		display: inline-block;
+		height: 10px;
+		position: relative;
+		top: 0px;
+		left: -2px;
+		transform: rotate(45deg);
+		vertical-align: top;
+		width: 10px;
+	}
+	
+}
+
+
+/* Swiper Slider Nav buttons*/
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev, 
+.swiper-container-rtl .swiper-button-next{
+    height: auto;
+    width: auto;
+    color: white;
+    &::after {
+    	content: none !important;
+    }
+    &.swiper-button-disabled {
+    	opacity: 1 !important;
+    }
+}

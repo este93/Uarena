@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="pastille" transform="translate(-4525 -2385)">
+    <circle id="BG_Pastille" data-name="BG Pastille" cx="30" cy="30" r="30" transform="translate(4535 2395)" fill="#16ff26"/>
+    <g id="Pointillés" transform="translate(4525 2385)" fill="none" stroke="#16ff26" stroke-linecap="round" stroke-width="3" stroke-dasharray="0 6">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="38.5" fill="none"/>
+    </g>
+  </g>
+</svg>

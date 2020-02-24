@@ -1,0 +1,27 @@
+.uk-dropdown {
+	background-color: transparent;
+	color: inherit;
+	.dropdown__header{
+		.btn {
+			display: flex;
+			justify-content: space-between;
+			font-size: rem(18px);
+			font-weight: $fw-light;
+			font-style: italic;
+			color: #000000;
+			padding: 1rem 1.25rem;
+			text-align: left;
+			svg {
+				width: 1em;
+			}
+		}
+	}
+	&.list-group {
+		display: none;
+	}
+	&.uk-open {
+		&.list-group {
+			display: grid;
+		}
+	}
+}

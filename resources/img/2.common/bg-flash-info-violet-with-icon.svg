@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2866px" height="120px" viewBox="0 0 2866 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-flash-info-violet-with-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 2866 0 2866 128.571 0 128.571"></polygon>
+        <path d="M1433.01,98 C1120.5817,98 808.145029,77.0752959 757.214093,73.5126797 C706.283158,69.9500636 0,9 0,0 C25.2213542,8.84015083e-15 275.221354,1.32602263e-14 750,1.32602263e-14 L2116,1.32602263e-14 C2616,4.42007542e-15 2866,0 2866,0 C2866,7.55555556 2616,31.8888889 2116,73 C1868.85939,89.6666667 1641.19606,98 1433.01,98 Z" id="path-3"></path>
+        <filter x="-0.8%" y="-11.2%" width="101.5%" height="144.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.327841938 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#0000B4" offset="0%"></stop>
+            <stop stop-color="#FF00FF" offset="99.4%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#FF00FF" offset="50%"></stop>
+            <stop stop-color="#0000B4" offset="99.9%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#FF00FF" offset="50%"></stop>
+            <stop stop-color="#0000B4" offset="99.4%"></stop>
+            <stop stop-color="#0000B4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#0000B4" offset="50%"></stop>
+            <stop stop-color="#FF00FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-flash-info-violet-with-icon">
+            <g id="Clipped">
+                <path d="M1433.01,98 C1120.5817,98 808.145029,77.0752959 757.214093,73.5126797 C706.283158,69.9500636 0,9 0,0 C25.2213542,8.84015083e-15 275.221354,1.32602263e-14 750,1.32602263e-14 L2116,1.32602263e-14 C2616,4.42007542e-15 2866,0 2866,0 C2866,7.55555556 2616,31.8888889 2116,73 C1868.85939,89.6666667 1641.19606,98 1433.01,98 Z" id="Shape" fill-opacity="0.899999976" fill="#1D0851" fill-rule="nonzero"></path>
+                <g id="Group" opacity="0.609319196">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <g id="Clipped" mask="url(#mask-2)">
+                        <g id="Group">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask" fill="black" fill-opacity="1">
+                                <use filter="url(#filter-5)" xlink:href="#path-3"></use>
+                            </g>
+                            <g mask="url(#mask-4)">
+                                <g transform="translate(-456.000000, -575.000000)">
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.508516)">
+                                        <polygon id="Shape" fill="url(#linearGradient-6)" fill-rule="nonzero" points="2484.60734 407.35152 3319.77633 407.35152 3319.77633 2033.19535 2484.60734 2033.19535"></polygon>
+                                        <ellipse id="Oval" fill="url(#linearGradient-7)" fill-rule="nonzero" cx="1422.95922" cy="1220.27274" rx="1422.61283" ry="1219.38183"></ellipse>
+                                        <ellipse id="Oval" fill="url(#linearGradient-8)" fill-rule="nonzero" cx="1422.95922" cy="1220.27274" rx="948.408555" ry="812.921223"></ellipse>
+                                        <ellipse id="Oval" fill="url(#linearGradient-9)" fill-rule="nonzero" cx="1422.95922" cy="1220.27413" rx="711.306416" ry="609.69161"></ellipse>
+                                    </g>
+                                    <path d="M1333.83333,645.583333 L1346.75,645.583333 L1346.75,658.5 L1333.83333,658.5 L1333.83333,645.583333 Z M1333.83333,596.5 L1346.75,596.5 L1346.75,633.527778 L1333.83333,633.527778 L1333.83333,596.5 Z M1338.938,565.5 C1304.714,565.5 1277,593.276 1277,627.5 C1277,661.724 1304.714,689.5 1338.938,689.5 C1373.224,689.5 1401,661.724 1401,627.5 C1401,593.276 1373.224,565.5 1338.938,565.5 Z M1339.86111,678.305556 C1312.26681,678.305556 1289.91667,655.955417 1289.91667,628.361111 C1289.91667,600.766806 1312.26681,578.416667 1339.86111,578.416667 C1367.45542,578.416667 1389.80556,600.766806 1389.80556,628.361111 C1389.80556,655.955417 1367.45542,678.305556 1339.86111,678.305556 Z" id="Shape" fill="#DDADE1" fill-rule="nonzero" style="mix-blend-mode: hard-light;" transform="translate(1339.000000, 627.500000) rotate(-180.000000) translate(-1339.000000, -627.500000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
