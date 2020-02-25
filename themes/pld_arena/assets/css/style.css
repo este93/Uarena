@@ -24111,8 +24111,8 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .c-title {
-  background: -webkit-gradient(linear, left top, right top, from(#bee42e), to(#28e429));
-  background: linear-gradient(90deg, #bee42e 0%, #28e429 100%);
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(lime));
+  background: linear-gradient(90deg, yellow 0%, lime 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 200;
@@ -24156,7 +24156,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 .p-defense .b-introduction {
   text-align: center;
-  background-image: url(../images/bg-defense-intro-mob.png?fd955d374b3e263ac21c9fa1617d460f);
+  background: #e9e7ee url(../images/bg-defense-intro-mob.png?fd955d374b3e263ac21c9fa1617d460f);
   padding: 6.5rem 1.5rem 6rem 1.5rem;
   background-size: cover;
   background-position: bottom center;
@@ -24881,12 +24881,14 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 .p-defense .b-veritable--content {
   position: relative;
   padding: 1.7rem 1rem 4.5rem 3rem;
-  background: url(../images/bg-bienvenue.png?274c9e98f491d58c50f512d4a6b3c4ca) bottom center no-repeat;
+  background: url(../images/bg-bienvenue-mob.png?9e76ed3064e01f4b07f25b08c2fc3cc8) bottom center no-repeat;
   background-size: contain;
 }
 
 @media (min-width: 600px) {
   .p-defense .b-veritable--content {
+    background: url(../images/bg-bienvenue.png?274c9e98f491d58c50f512d4a6b3c4ca) bottom center no-repeat;
+    background-size: contain;
     width: 50%;
     box-sizing: border-box;
     padding: 3.35rem 1rem 5.3rem 4.8rem;
@@ -25004,6 +25006,8 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 @media (min-width: 600px) {
   .p-defense .b-veritable--moment {
+    background: url(../images/bg-moment-desk.png?be4e1674af45f33b20a1c3dcac953c6f) no-repeat;
+    background-size: cover;
     width: 50%;
     box-sizing: border-box;
     padding: 1rem 1rem 3rem 1rem;
@@ -25313,10 +25317,12 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 @media (min-width: 600px) {
   .p-defense .b-veritable--obj8 {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.57rem;
+    height: 2.57rem;
     right: 3.3rem;
     top: 17.7rem;
+    background: url(../images/veritable-ob8-desk.png?71f29a6774a5c9fc13a718065a0ccb94) no-repeat;
+    background-size: contain;
   }
 }
 
@@ -25332,10 +25338,12 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 @media (min-width: 600px) {
   .p-defense .b-veritable--obj9 {
-    width: 4.9rem;
-    height: 3.4rem;
-    left: 4.1rem;
-    bottom: -2.3rem;
+    width: 4.4rem;
+    height: 2.85rem;
+    left: 4.6rem;
+    bottom: -2rem;
+    background: url(../images/veritable-ob9-desk.png?4a6282385e2ffe63995ac0242e8ee2a4) no-repeat;
+    background-size: contain;
   }
 }
 
@@ -25373,6 +25381,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
     padding-top: 5.6rem;
     padding-bottom: 6.5rem;
     background-size: auto !important;
+    background-color: black !important;
   }
 }
 
@@ -25423,8 +25432,8 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .b-rugby--title {
-  background: -webkit-gradient(linear, left top, right top, from(#b7ffff), to(#0032c0));
-  background: linear-gradient(90deg, #b7ffff 0%, #0032c0 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(44%, #0033cc), color-stop(60%, #b3fafe));
+  background: linear-gradient(to right, #0033cc 44%, #b3fafe 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.7px;
@@ -25464,6 +25473,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 @media (min-width: 600px) {
   .p-defense .b-rugby--video {
     padding-bottom: 33.4rem;
+    margin-top: 6rem;
   }
 }
 
@@ -25516,7 +25526,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .b-rugby--item--text {
-  padding: 2rem 1rem 1.2rem 1rem;
+  padding: 2rem 2rem 1.2rem 2rem;
 }
 
 @media (min-width: 600px) {
@@ -25837,6 +25847,15 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   height: 12.8rem;
 }
 
+@media (min-width: 600px) {
+  .p-defense .b-issues--slider--hover:before {
+    width: 10.82rem;
+    height: 19.13rem;
+    top: -1.9rem;
+    left: 2.5rem;
+  }
+}
+
 .p-defense .b-issues--slider--hover:after {
   position: absolute;
   content: "";
@@ -25846,6 +25865,15 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   right: -3rem;
   width: 5.7rem;
   height: 26.4rem;
+}
+
+@media (min-width: 600px) {
+  .p-defense .b-issues--slider--hover:after {
+    top: 0.5rem;
+    right: -2rem;
+    width: 7.57rem;
+    height: 18.82rem;
+  }
 }
 
 .p-defense .b-issues--slider--hover--title {
@@ -26217,6 +26245,10 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   margin-left: 4rem;
   margin-bottom: 0.3rem;
   padding: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#5d0560), to(#2d2d81));
+  background: linear-gradient(90deg, #5d0560 0%, #2d2d81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 600px) {
