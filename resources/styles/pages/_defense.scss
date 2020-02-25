@@ -1,6 +1,6 @@
 .p-defense{
 	.c-title{
-		@include gradient-text($gradient-green-text);
+		@include gradient-text($gradient-green);
 		font-weight: $fw-extra-light;
 		font-size: 2.5rem;
 		margin-top: 0;
@@ -30,7 +30,7 @@
 	}
 	.b-introduction{
 		text-align: center;
-		background-image: url('./img/2.common/bg-defense-intro-mob.png');
+		background: #e9e7ee url('./img/2.common/bg-defense-intro-mob.png');
 		padding: 6.5rem 1.5rem 6rem 1.5rem;
 	    background-size: cover;
 		background-position: bottom center;
@@ -597,9 +597,11 @@
 		&--content{
 			position: relative;
 			padding: 1.7rem 1rem 4.5rem 3rem;
-			background: url('./img/2.common/bg-bienvenue.png') bottom center no-repeat;	
+			background: url('./img/2.common/bg-bienvenue-mob.png') bottom center no-repeat;	
 			background-size: contain;
 			@media (min-width: $sm){
+				background: url('./img/2.common/bg-bienvenue.png') bottom center no-repeat;	
+				background-size: contain;
 				width: 50%;
 				box-sizing: border-box;
 				padding: 3.35rem 1rem 5.3rem 4.8rem;
@@ -683,6 +685,8 @@
     		padding: 0.6rem 1rem 2rem 1rem;
     		position: relative;
 			@media (min-width: $sm){
+				background: url('./img/2.common/bg-moment-desk.png') no-repeat;
+				background-size: cover;
 			    width: 50%;
 				box-sizing: border-box;
 				padding: 1rem 1rem 3rem 1rem;
@@ -922,10 +926,12 @@
 			width: 1.5rem;
 			height: 1.5rem;
 			@media (min-width: $sm){
-			    width: 2.3rem;
-			    height: 2.3rem;
+			    width: 2.57rem;
+			    height: 2.57rem;
 			    right: 3.3rem;
 			    top: 17.7rem;
+				background: url('./img/2.common/veritable-ob8-desk.png') no-repeat;
+			    background-size: contain;
 			}
 		}
 		&--obj9{
@@ -937,10 +943,12 @@
 		    width: 3.3rem;
 		    height: 2.2rem;
 			@media (min-width: $sm){
-			    width: 4.9rem;
-			    height: 3.4rem;
-			    left: 4.1rem;
-			    bottom: -2.3rem;
+		        width: 4.4rem;
+				height: 2.85rem;
+		        left: 4.6rem;
+				bottom: -2rem;
+				background: url('./img/2.common/veritable-ob9-desk.png') no-repeat;
+			    background-size: contain;
 			}
 		}
 		&--obj10{
@@ -973,6 +981,7 @@
 				padding-top: 5.6rem;
 				padding-bottom: 6.5rem;
 				background-size: auto !important;
+				background-color: black !important;
 			}	
 		    &:before{
 				position: absolute;
@@ -1016,7 +1025,7 @@
 			}
 	    }
 		&--title{
-			@include gradient-text($gradient-bleu);
+			@include gradient-text($gradient-rugby);
 			letter-spacing: -0.7px;
 			margin-bottom: 0.3rem;
 			@media (min-width: $sm){
@@ -1043,6 +1052,7 @@
 			padding-bottom: 13.5rem;
 			@media (min-width: $sm){
 				padding-bottom: 33.4rem;
+				margin-top: 6rem;
 			}	
 		}
 		iframe{
@@ -1080,7 +1090,7 @@
 				}
 			}
 			&--text{
-				padding: 2rem 1rem 1.2rem 1rem;
+				padding: 2rem 2rem 1.2rem 2rem;
 				@media (min-width: $sm){
 		    	    max-width: 980px;
 					margin: auto;
@@ -1332,6 +1342,12 @@
 				    left: 1.5rem;
 				    width: 7.2rem;
 				    height: 12.8rem;
+					@media (min-width: $sm){
+					    width: 10.82rem;
+    					height: 19.13rem;
+    					top: -1.9rem;
+    					left: 2.5rem;
+					}
 				}
 				&:after{
 					position: absolute;
@@ -1342,6 +1358,12 @@
 					right: -3rem;
 				    width: 5.7rem;
 				    height: 26.4rem;
+					@media (min-width: $sm){
+					    top: 0.5rem;
+					    right: -2rem;
+					    width: 7.57rem;
+					    height: 18.82rem;
+					}
 				}
 			    &--title{
 			        margin: 0;
@@ -1627,6 +1649,7 @@
 					margin-left: 4rem;
 					margin-bottom: 0.3rem;
 					padding: 0;
+					@include gradient-text($gradient-purple);
 					@media (min-width: $sm){
 						font-size: rem(48px);
 						letter-spacing: 1px;
