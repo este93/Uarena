@@ -193,6 +193,8 @@
 		text-align: center;
 		color: white;
 		@media (min-width: $sm){	
+			background-image: url('./img/2.common/bg-polymorphe-desk.jpg');
+			background-size: cover;
 		    padding-top: 5.6rem;
 		    padding-bottom: 5.5rem;
 		    .c-subtitle{

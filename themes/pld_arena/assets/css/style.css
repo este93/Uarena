@@ -24379,6 +24379,8 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 @media (min-width: 600px) {
   .p-defense .b-polymorphe {
+    background-image: url(../images/bg-polymorphe-desk.jpg?d3a7e9d17f885b915ee95fcccc14ff4f);
+    background-size: cover;
     padding-top: 5.6rem;
     padding-bottom: 5.5rem;
   }
