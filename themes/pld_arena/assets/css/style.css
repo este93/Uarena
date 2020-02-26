@@ -24160,6 +24160,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   padding: 6.5rem 1.5rem 6rem 1.5rem;
   background-size: cover;
   background-position: bottom center;
+  position: relative;
 }
 
 @media (min-width: 600px) {
@@ -24172,6 +24173,19 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
     margin: auto;
     max-width: 1100px;
   }
+}
+
+.p-defense .b-introduction:after {
+  content: "";
+  width: 100%;
+  padding-top: 2.7086383602%;
+  background-image: url(../images/forme-arrondie-bas-de-page-grey.svg?d4eeb2a1b0e5c51a446b3c863964c94c);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .p-defense .b-introduction--title {
@@ -24444,21 +24458,60 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   }
 }
 
-@media (max-width: 600px) {
-  .p-defense .b-polymorphe--buttons--item.active .b-polymorphe--buttons--item--label {
-    color: #00ff00;
-  }
-
-  .p-defense .b-polymorphe--buttons--item.active .pointilles {
-    opacity: 1;
-  }
-
-  .p-defense .b-polymorphe--buttons--item.active .pointilles_container {
+@media (min-width: 600px) {
+  .p-defense .b-polymorphe--buttons--item:hover .pointilles_container {
     -webkit-animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
     animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
   }
+
+  .p-defense .b-polymorphe--buttons--item:hover .pointilles {
+    opacity: 1;
+  }
+
+  .p-defense .b-polymorphe--buttons--item:hover .b-polymorphe--buttons--item--label {
+    color: #00ff00;
+  }
+
+  .p-defense .b-polymorphe--buttons--item:hover .disque {
+    fill: url(#grad-service-hover);
+  }
+
+  .p-defense .b-polymorphe--buttons--item:hover .service__icon {
+    fill: black;
+  }
+
+  .p-defense .b-polymorphe--buttons--item:hover .service__icon path {
+    fill: black;
+  }
+}
+
+.p-defense .b-polymorphe--buttons--item.active .b-polymorphe--buttons--item--label {
+  color: #00ff00;
+}
+
+.p-defense .b-polymorphe--buttons--item.active .pointilles {
+  opacity: 1;
+}
+
+.p-defense .b-polymorphe--buttons--item.active .pointilles_container {
+  -webkit-animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
+  animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.p-defense .b-polymorphe--buttons--item.active .disque {
+  fill: url(#grad-service-hover);
+}
+
+.p-defense .b-polymorphe--buttons--item.active .service__icon {
+  fill: black;
+}
+
+.p-defense .b-polymorphe--buttons--item.active .service__icon path {
+  fill: black;
 }
 
 .p-defense .b-polymorphe--buttons--item--icon {
@@ -24466,21 +24519,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   position: relative;
   font-size: 7.5rem;
   line-height: 1;
-}
-
-.p-defense .b-polymorphe--buttons--item--icon:hover .pointilles_container {
-  -webkit-animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
-  animation: plda-FadeEnter 0.25s cubic-bezier(0.35, 0, 0.5, 1) backwards, plda-GrowEnter 0.75s cubic-bezier(0.15, 1.3, 0.3, 1) backwards;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.p-defense .b-polymorphe--buttons--item--icon:hover .pointilles {
-  opacity: 1;
-}
-
-.p-defense .b-polymorphe--buttons--item--icon:hover .b-polymorphe--buttons--item--label {
-  color: #00ff00;
+  cursor: pointer;
 }
 
 .p-defense .b-polymorphe--buttons--item--icon svg {
@@ -24523,13 +24562,14 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .b-polymorphe--buttons--item--icon .service__icon {
-  font-size: 25%;
+  font-size: 19%;
   bottom: 0;
   left: 0;
   margin: auto;
   position: absolute;
   right: 0;
   top: 0;
+  fill: white;
 }
 
 .p-defense .b-polymorphe--tab {
@@ -24540,6 +24580,18 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 .p-defense .b-polymorphe--tab#tab1 {
   display: block;
+}
+
+.p-defense .b-polymorphe--tab#tab1 .b-polymorphe--tab--image {
+  background-image: url(../images/polymorphe1-1.png?7019e2a654a5029c324f48eadd7a57c1);
+}
+
+.p-defense .b-polymorphe--tab#tab2 .b-polymorphe--tab--image {
+  background-image: url(../images/polymorphe1-2.png?6ae39d3a28bb4db874b6b8c47450f422);
+}
+
+.p-defense .b-polymorphe--tab#tab3 .b-polymorphe--tab--image {
+  background-image: url(../images/polymorphe1-3.png?f99c5bd1fc00ffb58a02cc330a645596);
 }
 
 .p-defense .b-polymorphe--tab#tab3 .b-polymorphe--tab--info {
@@ -24580,10 +24632,19 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   }
 }
 
+.p-defense .b-polymorphe--tab--image {
+  height: 6rem;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
 @media (min-width: 600px) {
   .p-defense .b-polymorphe--tab--image {
-    margin-top: 1rem;
+    top: 1rem;
     position: relative;
+    clear: both;
+    height: 15rem;
   }
 }
 
@@ -24659,6 +24720,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   top: -6rem;
   left: -5rem;
   position: absolute;
+  background-image: url(../images/polymorphe1.1.png?3031988e378c17a1592b2441e3bb29f8);
 }
 
 @media (min-width: 600px) {
@@ -24975,6 +25037,18 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   position: relative;
 }
 
+.p-defense .b-veritable--item:first-child .b-veritable--image {
+  background: url(../images/veritable1.jpg?5d20c57dd96552118896ae98fac7a744) no-repeat;
+}
+
+.p-defense .b-veritable--item:nth-child(2) .b-veritable--image {
+  background: url(../images/veritable2.jpg?e68ae078902879aa0475a16f7926a674) no-repeat;
+}
+
+.p-defense .b-veritable--item:nth-child(3) .b-veritable--image {
+  background: url(../images/veritable3.jpg?03fbd77237d12729164cefab808bd1e4) no-repeat;
+}
+
 @media (min-width: 600px) {
   .p-defense .b-veritable--item {
     display: -webkit-box;
@@ -25155,10 +25229,11 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
     margin-top: 1.5rem;
     margin-left: 0;
     border-radius: 9px;
-    padding: 0.6rem 1.15rem 0.2rem 1.4rem;
     margin-top: 1.5rem;
     margin-left: 0rem;
     letter-spacing: 1px;
+    line-height: 2.5rem;
+    padding: 0 1.15rem 0 1.4rem;
   }
 
   .p-defense .b-veritable--moment--event--link:hover {
@@ -25371,40 +25446,14 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 .p-defense .b-rugby--top {
   text-align: center;
   padding-top: 3.8rem;
-  padding-bottom: 2rem;
-  background-position: bottom center !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
   position: relative;
+  background: black;
 }
 
 @media (min-width: 600px) {
   .p-defense .b-rugby--top {
     padding-top: 5.6rem;
-    padding-bottom: 6.5rem;
-    background-size: auto !important;
-    background-color: black !important;
   }
-}
-
-.p-defense .b-rugby--top:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  background-image: -webkit-linear-gradient(-90deg, black 13%, rgba(0, 0, 0, 0.5) 69%, rgba(0, 0, 0, 0) 100%);
-}
-
-.p-defense .b-rugby--top:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 52%;
-  background-image: -webkit-linear-gradient(-90deg, black 13%, rgba(0, 0, 0, 0.5) 69%, rgba(0, 0, 0, 0) 100%);
 }
 
 .p-defense .b-rugby--top p {
@@ -25472,9 +25521,22 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   padding-bottom: 13.5rem;
 }
 
+.p-defense .b-rugby--video--wrap {
+  background-position: center bottom !important;
+  background-size: cover !important;
+  background: black url(../images/bg-rugby.jpg?5f6eb75c444033938dbd63ced25b8b89) no-repeat;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .p-defense .b-rugby--video--wrap {
+    padding-bottom: 6.5rem;
+  }
+}
+
 @media (min-width: 600px) {
   .p-defense .b-rugby--video {
-    padding-bottom: 33.4rem;
+    padding-bottom: 28.5rem;
     margin-top: 6rem;
   }
 }
@@ -25492,6 +25554,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 @media (min-width: 600px) {
   .p-defense .b-rugby iframe {
     width: 88%;
+    max-width: 920px;
   }
 }
 
@@ -25509,6 +25572,22 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 
 .p-defense .b-rugby--item {
   text-align: center;
+}
+
+.p-defense .b-rugby--item:first-child .b-rugby--item--image > div:first-child {
+  background: url(../images/bg-rugby-img1.jpg?ccb5c444bd09fbf0cadcf666fa01dd8c) no-repeat;
+}
+
+.p-defense .b-rugby--item:first-child .b-rugby--item--image > div:nth-child(2) {
+  background: url(../images/bg-rugby-img2.jpg?63e7451500de566ec03d7b6062182c7f) no-repeat;
+}
+
+.p-defense .b-rugby--item:nth-child(2) .b-rugby--item--image > div:first-child {
+  background: url(../images/bg-rugby-img3.jpg?d6c9e9f90cf79b9900d5ab3a239b5a98) no-repeat;
+}
+
+.p-defense .b-rugby--item:nth-child(2) .b-rugby--item--image > div:nth-child(2) {
+  background: url(../images/bg-rugby-img4.jpg?e78053fabc5046e4189c472da4bfe9c2) no-repeat;
 }
 
 .p-defense .b-rugby--item--title {
@@ -25556,8 +25635,17 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   display: flex;
 }
 
-.p-defense .b-rugby--item--image img {
+.p-defense .b-rugby--item--image > div {
   width: 50%;
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 7.5rem;
+}
+
+@media (min-width: 600px) {
+  .p-defense .b-rugby--item--image > div {
+    height: 24.1rem;
+  }
 }
 
 .p-defense .b-issues {
@@ -25741,6 +25829,18 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   width: 50%;
   opacity: 0.5;
   padding-top: 2rem;
+}
+
+.p-defense .b-issues--slider .swiper-slide.slide1 .b-issues--slider--circle {
+  background: url(../images/issue-circle1.png?73f01a80f0d8c2eacf6f40001bab4dfb) no-repeat;
+}
+
+.p-defense .b-issues--slider .swiper-slide.slide2 .b-issues--slider--circle {
+  background: url(../images/issue-circle2.png?d43d1b16f2b3fdef1b78bc4af2115d1d) no-repeat;
+}
+
+.p-defense .b-issues--slider .swiper-slide.slide3 .b-issues--slider--circle {
+  background: url(../images/issue-circle1.png?73f01a80f0d8c2eacf6f40001bab4dfb) no-repeat;
 }
 
 @media (min-width: 600px) {
@@ -26085,7 +26185,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .b-fame--item--link {
-  background: url(../images/fame-link-default.png?397178ca2bc49fd8bc0783a826f5b189) no-repeat;
+  background: url(../images/fame-link-default.png?6ecf0aa63dd70d191c84f8848a17cb77) no-repeat;
   background-size: contain;
   width: 2.5rem;
   height: 2.5rem;
@@ -26110,7 +26210,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 }
 
 .p-defense .b-fame--item--link:hover {
-  background: url(../images/fame-link-hover.png?b694b169824904680991d379d0d6b76e) no-repeat;
+  background: url(../images/fame-link-hover.png?179c5b829c16ad535d9c57adc67c0ae1) no-repeat;
   background-size: contain;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
