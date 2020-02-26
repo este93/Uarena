@@ -1,7 +1,7 @@
 
 
 import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
-import { faBan,faWalking,faBicycle,faSubway,faMotorcycle, faSlidersH,faCheck,faMobileAlt,faUtensils,faComments, faShoppingCart, faCircle as fasCircle, faAngleLeft, faUser, faQuestion, faGift,faConciergeBell,faAngleRight, faCar,faTaxi,faLocationArrow, faChevronDown, faChevronUp, faEuroSign } from '@fortawesome/free-solid-svg-icons'
+import { faBan,faWalking,faBicycle,faSubway,faMotorcycle, faSlidersH,faCheck,faMobileAlt,faUtensils,faComments, faShoppingCart, faCircle as fasCircle, faAngleLeft, faUser, faUsers, faUserFriends, faQuestion, faGift,faConciergeBell,faAngleRight, faCar,faTaxi,faLocationArrow, faChevronDown, faChevronUp, faEuroSign } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { faAccessibleIcon,faFacebook,faTwitter,faInstagram,faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -177,7 +177,7 @@ class Icons {
 
 		//config.searchPseudoElements=true;
 
-		library.add(faBusiness,faBan,faAccessibleIcon,faClose,faWalking,faBicycle,faSubway,faSubway,faMotorcycle,faPlan,faCrazy,faSlidersH,faCheck,faUserConnected,faShoppingCart,faUserCircle,faPanneauParking,faAppli,faAnimations,faCocktailsDinatoires,faVestiaire,faPlacesVip,faVuePanoramique,faRestauration,faUtensils,faCar,faTaxi,fasCircle,faUser,faParking,faQuestion,faGift,faConciergeBell,faEuroSign,faAngleLeft,faAngleRight,faFacebook,faTwitter,faInstagram,faYoutube,faCircle,faSearch,faChampagne,faBurger,faClubEnfant,faTicket,faNotification,faNotificationChecked,faItineraire,faChevronDown,faChevronUp,faChevronBas,faVip,faAccount,faSeat,faComments,faFaq);
+		library.add(faBusiness,faBan,faAccessibleIcon,faClose,faWalking,faBicycle,faSubway,faSubway,faMotorcycle,faPlan,faCrazy,faSlidersH,faCheck,faUserConnected,faShoppingCart,faUserCircle,faPanneauParking,faAppli,faAnimations,faCocktailsDinatoires,faVestiaire,faPlacesVip,faVuePanoramique,faRestauration,faUtensils,faCar,faTaxi,fasCircle,faUser,faUsers,faUserFriends,faParking,faQuestion,faGift,faConciergeBell,faEuroSign,faAngleLeft,faAngleRight,faFacebook,faTwitter,faInstagram,faYoutube,faCircle,faSearch,faChampagne,faBurger,faClubEnfant,faTicket,faNotification,faNotificationChecked,faItineraire,faChevronDown,faChevronUp,faChevronBas,faVip,faAccount,faSeat,faComments,faFaq);
 
 		dom.watch();
 

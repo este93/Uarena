@@ -24178,7 +24178,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
 .p-defense .b-introduction:after {
   content: "";
   width: 100%;
-  padding-top: 2.7086383602%;
+  padding-top: 3.7086383602%;
   background-image: url(../images/forme-arrondie-bas-de-page-grey.svg?d4eeb2a1b0e5c51a446b3c863964c94c);
   background-size: cover;
   background-position: bottom;
@@ -25232,8 +25232,8 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
     margin-top: 1.5rem;
     margin-left: 0rem;
     letter-spacing: 1px;
-    line-height: 2.5rem;
-    padding: 0 1.15rem 0 1.4rem;
+    line-height: 2.4rem;
+    padding: 0.2rem 1.15rem 0 1.4rem;
   }
 
   .p-defense .b-veritable--moment--event--link:hover {
