@@ -24185,7 +24185,7 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .p-defense .b-introduction--title {
@@ -26206,11 +26206,12 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
     left: 1.1rem;
     bottom: -2px;
     z-index: 1;
+    cursor: pointer;
   }
 }
 
 .p-defense .b-fame--item--link:hover {
-  background: url(../images/fame-link-hover.png?179c5b829c16ad535d9c57adc67c0ae1) no-repeat;
+  background: url(../images/fame-link-hover.png?ac7f5c5dd75a00d29e500be4622710ee) no-repeat;
   background-size: contain;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
@@ -26223,6 +26224,19 @@ aside .list-item .svg--dgrad .svg-dgrad-racing {
   background: #e9e7ee url(../images/chiffres.png?2192cb73a5a0f7636dfae8712e64af7c) no-repeat;
   background-position: bottom;
   background-size: contain;
+}
+
+.p-defense .b-chiffres:after {
+  content: "";
+  width: 100%;
+  padding-top: 3.7086383602%;
+  background-image: url(../images/forme-arrondie-bas-de-page.svg?0bbc7a4b8586b43b08953b2cf4513e83);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 @media (min-width: 600px) {

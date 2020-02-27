@@ -53,7 +53,7 @@
 		    background-repeat: no-repeat;
 		    position: absolute;
 		    left: 0;
-		    bottom: 0;
+		    bottom: -1px;
 		}
 		&--title{
 			margin-bottom: 2.5rem;
@@ -1662,6 +1662,7 @@
 					left: 1.1rem;
 					bottom: -2px;
 					z-index: 1;
+					cursor: pointer;
 				}
 			    &:hover{
 					background: url('./img/2.common/fame-link-hover.png') no-repeat;
@@ -1679,6 +1680,18 @@
 		background: #e9e7ee url('./img/2.common/chiffres.png') no-repeat;	
 	    background-position: bottom;
 		background-size: contain;	
+		&:after{
+			content: "";
+		    width: 100%;
+		    padding-top: 3.7086383602%;
+		    background-image: url('./img/2.common/forme-arrondie-bas-de-page.svg');
+		    background-size: cover;
+		    background-position: bottom;
+		    background-repeat: no-repeat;
+		    position: absolute;
+		    left: 0;
+		    bottom: -1px;
+		}
 		@media (min-width: $sm){
 			padding-top: 5.6rem;
 			padding-bottom: 17.8rem;
